@@ -1,7 +1,7 @@
 qauland.github.io
 =================
 
-Duplicate of Texts/Texts.github.io.
+Duplicate of [Texts/Texts.github.io](https://github.com/Texts/Texts.github.io).
 
 Based on [Lanyon](<https://github.com/poole/lanyon>) and [Poole](<http://getpoole.com>).
 
