@@ -3,8 +3,8 @@ layout: page
 title: About
 ---
 
-Hey there! This page is included as an example. Feel free to customize it for
-your own use.
+Hello! My name is Qauland. It's an alias, though.
 
-Follow [instructions](<http://www.texts.io/support/0017/>) to publish your blog
-on GitHub Pages.
+You can see this blog's source code on [GitHub](<https://github.com/qauland/qauland.github.io>).
+
+_I have a [Twitter](<https://twitter.com/qauland>) account, btw._
