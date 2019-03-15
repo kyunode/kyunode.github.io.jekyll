@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Perihal Saya
 ---
 
 Halo! Nama saya Qauland. Bukan nama asli, sih.
