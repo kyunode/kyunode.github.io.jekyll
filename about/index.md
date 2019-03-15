@@ -1,10 +1,11 @@
 ---
 layout: page
-title: About
+title: Perihal Saya
 ---
 
-Hello! My name is Qauland. It's an alias, though.
+Halo! Nama saya Qauland. Bukan nama asli, sih.
 
-You can see this blog's source code on [GitHub](<https://github.com/qauland/qauland.github.io>).
+[qauland.github.io](<https://qauland.github.io>) memiliki kode sumber terbuka (*open source*).
+Anda dapat melihatnya di [repositori GitHub situs ini](<https://github.com/qauland/qauland.github.io>).
 
-_I have a [Twitter](<https://twitter.com/qauland>) account, btw._
+*Saya punya akun [Twitter](<https://twitter.com/qauland>), btw.*
