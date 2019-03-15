@@ -2,6 +2,8 @@
 title: Typesetting Math in Texts
 ---
 
+*Artikel ini akan diterjemahkan ke dalam bahasa Indonesia suatu hari nanti.* **Mungkin**.
+
 Basic math
 ----------
 
