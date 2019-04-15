@@ -44,4 +44,4 @@ Joey bergegas menuju restoran pria kulit hitam. la langsung ke sudut restoran me
 
 Dipenuhi rasa sedih bercampur penasaran, ia membaca isi kertas itu. Si pria Afrika kulit hitam tersebut menulis untuk Joey:
 
-***"Tolong sampaikan kepada teman-teman Anda yang orang Indonesia, tanggal 17 April nanti gunakan hak pilih Anda di Tempat Pemungutan Suara."***
+**"Tolong sampaikan kepada teman-teman Anda yang orang Indonesia, tanggal 17 April nanti gunakan hak pilih Anda di Tempat Pemungutan Suara."**
