@@ -18,3 +18,9 @@ defaults:
       path:         ''
     values:
       layout:       post
+
+head_scripts:
+  - https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js
+
+plugins:
+  - jekyll-paginate
