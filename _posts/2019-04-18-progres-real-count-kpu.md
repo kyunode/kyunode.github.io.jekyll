@@ -11,10 +11,11 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data (saat terakhir kali saya berkunjung)
 ---
 
-| *Last Visit*       | 18 Apr 2019 17:52:23   |
-| *Last Version* 	 | 18 Apr 2019 17:45:03   | 
-| *Last Progress*    | 0,68544%				  |
-| TPS				 | 5.575 dari 813.350 TPS |
+| 					| **Tingkat Nasional**				 | **Provinsi Sulawesi Selatan**  |
+|-------------------|------------------------------------|--------------------------------|
+| *Last Visit*      | 19 Apr 2019 06:55:50 WITA 		 | 19 Apr 2019 06:55:50 WITA	  |
+| *Last Version* 	| 19 Apr 2019 06:45:03 WITA 		 | 19 Apr 2019 06:45:03 WITA	  |
+| *Last Progress*   | 1,30104% (10.582 dari 813.350 TPS) | 1,34699% (355 dari 26.355 TPS) |
 
 *Records*
 ---
@@ -23,13 +24,18 @@ Sajian data dalam bentuk tabel akan menyusul.
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
-<canvas id="canvas" width="800" height="600"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<canvas id="canvas" width="100%" height="85%"></canvas>
 <script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
 	
     var timeFormat = 'YYMMDD HHmm ss';
     
 	Chart.defaults.global.defaultFontFamily = 'Source Sans Pro';
+	
+	function divideVotes(vote) {
+		var dvote = vote / 1000000;
+		return (dvote);
+	}
 	
     var config = {
         type:    'line',
@@ -38,6 +44,7 @@ Sajian data dalam bentuk tabel akan menyusul.
                 {
                     label: "Jokowi-Amin",
                     data: [
+                    { x: "190418 1000 00", y: NaN },
                     { x: "190418 1030 03", y: 130952 },
                     { x: "190418 1045 03", y: 141898 },
                     { x: "190418 1200 03", y: 197869 },
@@ -48,14 +55,23 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190418 1515 03", y: 403079 },
                     { x: "190418 1615 03", y: 482172 },
                     { x: "190418 1700 03", y: 535366 },
-                    { x: "190418 1745 03", y: 610654 }
+                    { x: "190418 1745 03", y: 610654 },
+                    { x: "190418 2015 03", y: 723660 },
+                    { x: "190418 2145 02", y: 741400 },
+                    { x: "190418 2215 03", y: 766633 },
+                    { x: "190419 0015 03", y: 945947 },
+                    { x: "190419 0500 03", y: 1131661 },
+                    { x: "190419 0645 03", y: 1136153 }
                     ],
                     fill: false,
-                    borderColor: 'orange'
+                    backgroundColor: 'rgba(253,106,2,0.5)',
+                    borderColor: 'orange',
+                    pointBackgroundColor: 'orange'
                 },
                 {
                     label: "Prabowo-Sandi",
                     data: [
+                    { x: "190418 1000 00", y: NaN },
                     { x: "190418 1030 03", y: 93168 },
                     { x: "190418 1045 03", y: 98766 },
                     { x: "190418 1200 03", y: 134808 },
@@ -66,10 +82,18 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190418 1515 03", y: 278317 },
                     { x: "190418 1615 03", y: 344762 },
                     { x: "190418 1700 03", y: 389656 },
-                    { x: "190418 1745 03", y: 447461 }
+                    { x: "190418 1745 03", y: 447461 },
+                    { x: "190418 2015 03", y: 534148 },
+                    { x: "190418 2145 02", y: 548095 },
+                    { x: "190418 2215 03", y: 570742 },
+                    { x: "190419 0015 03", y: 722875 },
+                    { x: "190419 0500 03", y: 873200 },
+                    { x: "190419 0645 03", y: 878541 }
                     ],
                     fill:  false,
-                    borderColor: 'skyblue'
+                    backgroundColor: 'rgba(135,206,235,0.5)',
+                    borderColor: 'skyblue',
+                    pointBackgroundColor: 'skyblue'
                 }
             ]
         },
@@ -77,7 +101,7 @@ Sajian data dalam bentuk tabel akan menyusul.
             responsive: true,
             title:      {
                 display: true,
-                text:    "Hasil Perekaman Data Real Count KPU 2019",
+                text:    ['Hasil Perekaman Data Real Count KPU 2019', 'Tingkat Nasional'],
                 fontSize: 18
             },
             scales:     {
@@ -88,6 +112,7 @@ Sajian data dalam bentuk tabel akan menyusul.
                         displayFormats: {
                         	hour: 'DD MMM HH:mm'
                         },
+                        unitStepSize: 2.5,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
@@ -99,7 +124,115 @@ Sajian data dalam bentuk tabel akan menyusul.
                 yAxes: [{
                     scaleLabel: {
                         display:     true,
-                        labelString: 'Jumlah Surat Suara'
+                        labelString: 'Perolehan Suara'
+                    },
+                    ticks: {
+                    	userCallback: function(value) {
+                    		return divideVotes(value) + 'jt';
+                    	}
+                    }
+                }]
+            },
+            elements: {
+            	line: {
+                	tension: 0 // disables bezier curves
+            	}
+        	},
+        	legend: {
+        		labels: {
+        			fontSize: 14
+        		}
+        	}
+        }
+    };
+//
+//    window.onload = function () {
+//        var ctx       = document.getElementById("canvas").getContext("2d");
+//        window.myLine = new Chart(ctx, config);
+//    };
+</script>
+
+<br/>
+
+<canvas id="canvasSulsel" width="100%" height="85%"></canvas>
+<script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
+	
+    var timeFormat = 'YYMMDD HHmm ss';
+    
+	Chart.defaults.global.defaultFontFamily = 'Source Sans Pro';
+	
+	function divideVotesSulsel(votess) {
+		var dvotess = votess / 1000;
+		return (dvotess);
+	}
+	
+    var config2 = {
+        type:    'line',
+        data:    {
+            datasets: [
+                {
+                    label: "Jokowi-Amin",
+                    data: [
+                    { x: "190418 1000 00", y: NaN },
+                    { x: "190418 2145 02", y: 17843 },
+                    { x: "190418 2215 03", y: 18867 },
+                    { x: "190419 0015 03", y: 25819 },
+                    { x: "190419 0645 03", y: 29000 }
+                    ],
+                    fill: false,
+                    backgroundColor: 'rgba(253,106,2,0.5)',
+                    borderColor: 'orange',
+                    pointBackgroundColor: 'orange'
+                },
+                {
+                    label: "Prabowo-Sandi",
+                    data: [
+                    { x: "190418 1000 00", y: NaN },
+                    { x: "190418 2145 02", y: 25168 },
+                    { x: "190418 2215 03", y: 26661 },
+                    { x: "190419 0015 03", y: 32762 },
+                    { x: "190419 0645 03", y: 36827 }
+                    ],
+                    fill:  false,
+                    backgroundColor: 'rgba(135,206,235,0.5)',
+                    borderColor: 'skyblue',
+                    pointBackgroundColor: 'skyblue'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            title:      {
+                display: true,
+                text:    ['Hasil Perekaman Data Real Count KPU 2019', 'Wilayah Pemilihan Sulawesi Selatan'],
+                fontSize: 18
+            },
+            scales:     {
+                xAxes: [{
+                    type:       "time",
+                    time:       {
+                        unit: 'hour',
+                        displayFormats: {
+                        	hour: 'DD MMM HH:mm'
+                        },
+                        unitStepSize: 2.5,
+                        format: timeFormat,
+                        tooltipFormat: 'DD MMM YYYY HH:mm:ss'
+                    },
+                    scaleLabel: {
+                        display:     true,
+                        labelString: 'Tanggal/Versi'
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display:     true,
+                        labelString: 'Perolehan Suara di Sulawesi Selatan'
+                    },
+                    ticks: {
+                    	userCallback: function(value) {
+                    		return divideVotesSulsel(value) + 'rb';
+                    	}
                     }
                 }]
             },
@@ -119,7 +252,9 @@ Sajian data dalam bentuk tabel akan menyusul.
     window.onload = function () {
         var ctx       = document.getElementById("canvas").getContext("2d");
         window.myLine = new Chart(ctx, config);
-    };
+        var ctxSulsel = document.getElementById("canvasSulsel").getContext("2d");
+        window.myLine = new Chart(ctxSulsel, config2);
+    }
 </script>
 
 *Disclaimer* (Sangkalan)
@@ -134,5 +269,11 @@ ke situs KPU.
 Saya tidak dapat menjamin bahwa saya dapat memperbarui data di
 atas secara rutin.
 
-Proses perekaman dimulai tanggal 18 April 2019 dikarenakan KPU
-baru memberikan *raw data* pada tanggal tersebut.
+Proses perekaman data dimulai tanggal 18 April 2019 dikarenakan
+KPU baru memberikan *raw data* pada tanggal tersebut.
+
+Proses perekaman data untuk provinsi Sulawesi Selatan sedikit
+terlambat (18 April 21:53) *karena saya baru pengen ngerekam
+pukul segitu*. Khusus untuk provinsi ini, tidak ada tangkapan
+layar (*screenshot*) yang saya ambil.
+
