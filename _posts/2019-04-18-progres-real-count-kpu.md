@@ -11,11 +11,17 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| 					 | **Tingkat Nasional**		  | **Provinsi Sulawesi Selatan** |
-|--------------------|----------------------------|-------------------------------|
-| *Last Visit*[^1]   | 19 Apr 2019 17:53:16 WITA  | 19 Apr 2019 17:53:16 WITA	  |
-| *Last Version*[^2] | 19 Apr 2019 17:45:03 WITA  | 19 Apr 2019 17:45:03 WITA	  |
-| *Last Progress*    | 2,41962% dari 813.350 TPS  | 2,95580% dari 26.355 TPS      |
+| *Last Visit*[^1]   | 19 Apr 2019 23:22:01 WITA  |
+| *Last Version*[^2] | 19 Apr 2019 23:15:02 WITA  |
+| *Last Progress*    | 3,78177% dari 813.350 TPS  |
+
+<!--
+| 					 | **Provinsi Sulawesi Selatan** |
+|--------------------|-------------------------------|
+| *Last Visit*  	 | 19 Apr 2019 23:22:19 WITA	 |
+| *Last Version*	 | 19 Apr 2019 23:15:02 WITA	 |
+| *Last Progress*    | 4,55701% dari 26.355 TPS      |
+-->
 
 [^1]: Kapan terakhir kali saya mengunjungi situs KPU.
 
@@ -70,7 +76,11 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1330 03", y: 1460232 },
                     { x: "190419 1430 03", y: 1652105 },
                     { x: "190419 1630 03", y: 2017709 },
-                    { x: "190419 1745 03", y: 2062784 }
+                    { x: "190419 1745 03", y: 2062784 },
+                    { x: "190419 1915 02", y: 2308495 },
+                    { x: "190419 2015 03", y: 2527064 },
+                    { x: "190419 2145 02", y: 2728037 },
+                    { x: "190419 2315 02", y: 3201594 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -102,7 +112,11 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1330 03", y: 1157239 },
                     { x: "190419 1430 03", y: 1323415 },
                     { x: "190419 1630 03", y: 1639061 },
-                    { x: "190419 1745 03", y: 1678115 }
+                    { x: "190419 1745 03", y: 1678115 },
+                    { x: "190419 1915 02", y: 1894876 },
+                    { x: "190419 2015 03", y: 2065691 },
+                    { x: "190419 2145 02", y: 2242280 },
+                    { x: "190419 2315 02", y: 2650827 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -166,9 +180,7 @@ Sajian data dalam bentuk tabel akan menyusul.
 //    };
 </script>
 
-<br/>
-
-<canvas id="canvasSulsel" width="100%" height="85%"></canvas>
+<!--<canvas id="canvasSulsel" width="100%" height="85%"></canvas>-->
 <script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
 	
     var timeFormat = 'YYMMDD HHmm ss';
@@ -197,7 +209,10 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1145 03", y: 30421 },
                     { x: "190419 1430 03", y: 51463 },
                     { x: "190419 1630 03", y: 61956 },
-                    { x: "190419 1745 03", y: 62893 }
+                    { x: "190419 1745 03", y: 62893 },
+                    { x: "190419 2015 03", y: 79347 },
+                    { x: "190419 2145 02", y: 87050 },
+                    { x: "190419 2315 02", y: 103409 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -217,7 +232,10 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1145 03", y: 38441 },
                     { x: "190419 1430 03", y: 65197 },
                     { x: "190419 1630 03", y: 81559 },
-                    { x: "190419 1745 03", y: 82478 }
+                    { x: "190419 1745 03", y: 82478 },
+                    { x: "190419 2015 03", y: 100003 },
+                    { x: "190419 2145 02", y: 107239 },
+                    { x: "190419 2315 02", y: 121477 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -278,8 +296,8 @@ Sajian data dalam bentuk tabel akan menyusul.
     window.onload = function () {
         var ctx       = document.getElementById("canvas").getContext("2d");
         window.myLine = new Chart(ctx, config);
-        var ctxSulsel = document.getElementById("canvasSulsel").getContext("2d");
-        window.myLine = new Chart(ctxSulsel, config2);
+        //var ctxSulsel = document.getElementById("canvasSulsel").getContext("2d");
+        //window.myLine = new Chart(ctxSulsel, config2);
     }
 </script>
 
@@ -297,15 +315,20 @@ ke situs KPU.
 
 Saya tidak dapat menjamin bahwa saya dapat memperbarui data di
 atas secara rutin. *Saya juga tidak dapat menjamin bahwa data di
-atas bebas dari aktivitas peretasan*.
+atas bebas dari kecurangan dan/atau aktivitas peretasan*.
 
 Proses perekaman data dimulai tanggal 18 April 2019 dikarenakan
 KPU baru memberikan *raw data* pada tanggal tersebut.
 
-Proses perekaman data untuk provinsi Sulawesi Selatan sedikit
+<!--Proses perekaman data untuk provinsi Sulawesi Selatan sedikit
 terlambat (18 April 21:53) *karena saya baru pengen ngerekam
 pukul segitu*. Khusus untuk provinsi Sulawesi Selatan, tidak ada
 tangkapan layar (*screenshot*) yang saya ambil.
+
+Karena tidak ada screenshot yang saya ambil, maka data ini tidak
+dapat saya pertanggungjawabkan. Oleh sebab itu, saya memutuskan
+untuk menyembunyikannya. Anda (mungkin) bisa melihatnya kembali
+dengan menggunakan fitur Inspect Element.-->
 
 Merasa ada kesalahan pada data di atas? Segera
 [buat *issue*](<https://github.com/qauland/qauland.github.io/issues/new>){:target="_blank"}
