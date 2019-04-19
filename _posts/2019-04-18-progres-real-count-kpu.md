@@ -8,14 +8,18 @@ dari *real count* KPU tersebut.
 
 Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 
-Rincian Data (saat terakhir kali saya berkunjung)
+Rincian Data
 ---
 
-| 					| **Tingkat Nasional**				 | **Provinsi Sulawesi Selatan**  |
-|-------------------|------------------------------------|--------------------------------|
-| *Last Visit*      | 19 Apr 2019 06:55:50 WITA 		 | 19 Apr 2019 06:55:50 WITA	  |
-| *Last Version* 	| 19 Apr 2019 06:45:03 WITA 		 | 19 Apr 2019 06:45:03 WITA	  |
-| *Last Progress*   | 1,30104% (10.582 dari 813.350 TPS) | 1,34699% (355 dari 26.355 TPS) |
+| 					 | **Tingkat Nasional**		  | **Provinsi Sulawesi Selatan** |
+|--------------------|----------------------------|-------------------------------|
+| *Last Visit*[^1]   | 19 Apr 2019 08:52:24 WITA  | 19 Apr 2019 08:52:24 WITA	  |
+| *Last Version*[^2] | 19 Apr 2019 08:45:02 WITA  | 19 Apr 2019 08:45:02 WITA	  |
+| *Last Progress*    | 1,32489% dari 813.350 TPS  | 1,36976% dari 26.355 TPS      |
+
+[^1]: Kapan terakhir kali saya mengunjungi situs KPU.
+
+[^2]: Versi dari data KPU saat saya terakhir kali mengunjungi situs KPU.
 
 *Records*
 ---
@@ -61,7 +65,8 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190418 2215 03", y: 766633 },
                     { x: "190419 0015 03", y: 945947 },
                     { x: "190419 0500 03", y: 1131661 },
-                    { x: "190419 0645 03", y: 1136153 }
+                    { x: "190419 0645 03", y: 1136153 },
+                    { x: "190419 0845 02", y: 1158171 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -88,7 +93,8 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190418 2215 03", y: 570742 },
                     { x: "190419 0015 03", y: 722875 },
                     { x: "190419 0500 03", y: 873200 },
-                    { x: "190419 0645 03", y: 878541 }
+                    { x: "190419 0645 03", y: 878541 },
+                    { x: "190419 0845 02", y: 897441 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -112,7 +118,7 @@ Sajian data dalam bentuk tabel akan menyusul.
                         displayFormats: {
                         	hour: 'DD MMM HH:mm'
                         },
-                        unitStepSize: 2.5,
+                        unitStepSize: 3,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
@@ -177,7 +183,9 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190418 2145 02", y: 17843 },
                     { x: "190418 2215 03", y: 18867 },
                     { x: "190419 0015 03", y: 25819 },
-                    { x: "190419 0645 03", y: 29000 }
+                    { x: "190419 0645 03", y: 29000 },
+                    { x: "190419 0815 03", y: 29278 },
+                    { x: "190419 0845 02", y: 29484 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -191,7 +199,9 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190418 2145 02", y: 25168 },
                     { x: "190418 2215 03", y: 26661 },
                     { x: "190419 0015 03", y: 32762 },
-                    { x: "190419 0645 03", y: 36827 }
+                    { x: "190419 0645 03", y: 36827 },
+                    { x: "190419 0815 03", y: 37407 },
+                    { x: "190419 0845 02", y: 37465 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -215,7 +225,7 @@ Sajian data dalam bentuk tabel akan menyusul.
                         displayFormats: {
                         	hour: 'DD MMM HH:mm'
                         },
-                        unitStepSize: 2.5,
+                        unitStepSize: 3,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
@@ -227,7 +237,7 @@ Sajian data dalam bentuk tabel akan menyusul.
                 yAxes: [{
                     scaleLabel: {
                         display:     true,
-                        labelString: 'Perolehan Suara di Sulawesi Selatan'
+                        labelString: 'Perolehan Suara'
                     },
                     ticks: {
                     	userCallback: function(value) {
@@ -260,20 +270,34 @@ Sajian data dalam bentuk tabel akan menyusul.
 *Disclaimer* (Sangkalan)
 ---
 
+**Situs ini tidak terafiliasi dengan Komisi Pemilihan Umum (KPU)
+Republik Indonesia dan pihak-pihak lain dalam bentuk apapun.**
+Semua data yang ada di sini saya peroleh sendiri dari situs KPU.
+
 Proses perekaman dilakukan secara manual dengan mengunjungi
-[situs Info Publik Pemilu 2019 milik KPU](<https://pemilu2019.kpu.go.id/#/ppwp/hitung-suara/>)
+[situs Info Publik Pemilu 2019 milik KPU](<https://pemilu2019.kpu.go.id/#/ppwp/hitung-suara/>){:target="_blank"}
 dalam jangka waktu tertentu dan mencatat data di dalamnya.
 Sebagai bukti, saya mengambil tangkapan layar saat berkunjung
 ke situs KPU.
 
 Saya tidak dapat menjamin bahwa saya dapat memperbarui data di
-atas secara rutin.
+atas secara rutin. *Saya juga tidak dapat menjamin bahwa data di
+atas bebas dari aktivitas peretasan*.
 
 Proses perekaman data dimulai tanggal 18 April 2019 dikarenakan
 KPU baru memberikan *raw data* pada tanggal tersebut.
 
 Proses perekaman data untuk provinsi Sulawesi Selatan sedikit
 terlambat (18 April 21:53) *karena saya baru pengen ngerekam
-pukul segitu*. Khusus untuk provinsi ini, tidak ada tangkapan
-layar (*screenshot*) yang saya ambil.
+pukul segitu*. Khusus untuk provinsi Sulawesi Selatan, tidak ada
+tangkapan layar (*screenshot*) yang saya ambil.
+
+Merasa ada kesalahan pada data di atas? Segera beritahu saya lewat
+[Twitter](<https://twitter.com/qauland>){:target="_blank"}, [Facebook](<https://fb.me/qauland>){:target="_blank"},
+[Telegram](<https://t.me/qauland>){:target="_blank"}, dan/atau [Discord](<https://discordapp.com>){:target="_blank"}:
+qauland#5976.
+
+---Qaulan Ma'ruf Lira
+
+---
 
