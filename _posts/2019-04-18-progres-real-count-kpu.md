@@ -19,14 +19,19 @@ Rincian Data
 | *Last Version*[^1] | 21 Apr 2019 05:45:03 WITA  |
 | *Last Progress*    | 7,69460% dari 813.350 TPS  |
 
+<p id="countup"></p>
 <p id="countdown"></p>
 
 <script>
 const now = moment();
+let startcount = moment("17 Apr 2019", "DD MMM YYYY");
 let endcount = moment("23 May 2019", "DD MMM YYYY");
-let diff = endcount.diff(now, 'day');
-let counter = document.getElementById('countdown');
-counter.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff + ' hari.';
+let diffdown = endcount.diff(now, 'day');
+let diffup = startcount.diff(now, 'day');
+let counterdown = document.getElementById('countdown');
+counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diffdown + ' hari.';
+let counterup = document.getElementById('countup');
+counterup.innerHTML = 'Rekapitulasi suara telah berlangsung selama ' + Math.abs(diffup) + ' hari.';
 </script>
 
 <!--
