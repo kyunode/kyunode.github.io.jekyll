@@ -11,26 +11,35 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Visit*[^1]   | 20 Apr 2019 08:33:49 WITA  |
-| *Last Version*[^2] | 20 Apr 2019 08:30:03 WITA  |
-| *Last Progress*    | 4,60970% dari 813.350 TPS  |
+| *Last Updated*     | 20 Apr 2019 21:07:59 WITA  |
+| *Last Version*[^1] | 20 Apr 2019 21:00:03 WITA  |
+| *Last Progress*    | 5,43616% dari 813.350 TPS  |
+
+<p id="countdown"></p>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script>
+const now = moment();
+let endcount = moment("23 May 2019", "DD MMM YYYY");
+let diff = endcount.diff(now, 'day');
+let counter = document.getElementById('countdown');
+counter.innerHTML = 'Penghitungan suara diperkirakan berakhir dalam ' + diff + ' hari.';
+</script>
 
 <!--
 | 					 | **Provinsi Sulawesi Selatan** |
 |--------------------|-------------------------------|
-| *Last Visit*  	 | 20 Apr 2019 07:09:08 WITA	 |
-| *Last Version*	 | 20 Apr 2019 07:00:03 WITA	 |
-| *Last Progress*    | 5,60804% dari 26.355 TPS      |
+| *Last Visit*  	 | 20 Apr 2019 17:54:05 WITA	 |
+| *Last Version*	 | 20 Apr 2019 17:45:02 WITA	 |
+| *Last Progress*    | 5,90021% dari 26.355 TPS      |
 -->
 
-[^1]: Kapan terakhir kali saya mengunjungi situs KPU.
-
-[^2]: Versi dari data KPU saat saya terakhir kali mengunjungi situs KPU.
+[^1]: Versi dari data KPU saat saya terakhir kali memperbarui data.
 
 *Records*
 ---
 
-Sajian data dalam bentuk tabel akan menyusul.
+[Lihat tabulasi data di Google Spreadsheets.](https://docs.google.com/spreadsheets/d/1_FrbBFEcgaX2rU-BDzjBi-qhuVjWN3oLcfv1lrSBtks/edit?usp=sharing){:target="_blank"}
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -44,7 +53,7 @@ Sajian data dalam bentuk tabel akan menyusul.
 	
 	function divideVotes(vote) {
 		var dvote = vote / 1000000;
-		return (dvote);
+		return dvote.toLocaleString("id-ID");
 	}
 	
     var config = {
@@ -85,7 +94,14 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190420 0400 03", y: 3843519 },
                     { x: "190420 0600 03", y: 3855607 },
                     { x: "190420 0700 03", y: 3870392 },
-                    { x: "190420 0830 03", y: 3943595 }
+                    { x: "190420 0830 03", y: 3943595 },
+                    { x: "190420 1000 02", y: 3966642 },
+                    { x: "190420 1245 03", y: 3974811 },
+                    { x: "190420 1415 03", y: 3974985 },
+                    { x: "190420 1545 03", y: 3974985 },
+                    { x: "190420 1745 02", y: 4074791 },
+                    { x: "190420 1845 03", y: 4292323 },
+                    { x: "190420 2100 03", y: 4654040 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -126,7 +142,14 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190420 0400 03", y: 3186560 },
                     { x: "190420 0600 03", y: 3195689 },
                     { x: "190420 0700 03", y: 3203292 },
-                    { x: "190420 0830 03", y: 3237714 }
+                    { x: "190420 0830 03", y: 3237714 },
+                    { x: "190420 1000 02", y: 3260762 },
+                    { x: "190420 1245 03", y: 3267011 },
+                    { x: "190420 1415 03", y: 3267585 },
+                    { x: "190420 1545 03", y: 3267585 },
+                    { x: "190420 1745 02", y: 3351052 },
+                    { x: "190420 1845 03", y: 3526024 },
+                    { x: "190420 2100 03", y: 3819116 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -148,9 +171,10 @@ Sajian data dalam bentuk tabel akan menyusul.
                     time:       {
                         unit: 'hour',
                         displayFormats: {
-                        	hour: 'DD MMM HH:mm'
+                        	hour: 'DD MMM HH:mm',
+                        	day: 'DD MMM YYYY'
                         },
-                        unitStepSize: 6,
+                        unitStepSize: 8,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
@@ -166,7 +190,10 @@ Sajian data dalam bentuk tabel akan menyusul.
                     },
                     ticks: {
                     	userCallback: function(value) {
-                    		return divideVotes(value) + 'jt';
+                    			if (value == 0) {
+                    				return divideVotes(value);
+                    			}
+                    		return divideVotes(value) + ' jt';
                     	}
                     }
                 }]
@@ -176,7 +203,7 @@ Sajian data dalam bentuk tabel akan menyusul.
 
                 callbacks: {
                     label: function (tooltipItems, data) {
-                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel.toLocaleString() + ' suara';
+                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel.toLocaleString("id-ID") + ' suara';
                     }
                 }
             },
@@ -233,7 +260,9 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 2145 02", y: 87050 },
                     { x: "190419 2315 02", y: 103409 },
                     { x: "190420 0400 03", y: 128911 },
-                    { x: "190420 0700 03", y: 129427 }
+                    { x: "190420 0700 03", y: 129427 },
+                    { x: "190420 0945 03", y: 133382 },
+                    { x: "190420 1745 02", y: 135469 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -258,7 +287,9 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 2145 02", y: 107239 },
                     { x: "190419 2315 02", y: 121477 },
                     { x: "190420 0400 03", y: 146889 },
-                    { x: "190420 0700 03", y: 147415 }
+                    { x: "190420 0700 03", y: 147415 },
+                    { x: "190420 0945 03", y: 153093 },
+                    { x: "190420 1745 02", y: 155701 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
