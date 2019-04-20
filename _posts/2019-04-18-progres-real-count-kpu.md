@@ -2,6 +2,10 @@
 title: Progres dari Real Count KPU pada Pemilihan Presiden 2019
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
 KPU telah memulai proses *real count* Pemilu 2019 sejak tanggal
 17 April 2019 lalu. Saya mencoba untuk merekam kemajuan (*progress*)
 dari *real count* KPU tersebut.
@@ -17,7 +21,6 @@ Rincian Data
 
 <p id="countdown"></p>
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script>
 const now = moment();
 let endcount = moment("23 May 2019", "DD MMM YYYY");
@@ -41,9 +44,6 @@ counter.innerHTML = 'Penghitungan suara diperkirakan berakhir dalam ' + diff + '
 
 [Lihat tabulasi data di Google Spreadsheets.](https://docs.google.com/spreadsheets/d/1_FrbBFEcgaX2rU-BDzjBi-qhuVjWN3oLcfv1lrSBtks/edit?usp=sharing){:target="_blank"}
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
 <canvas id="canvas" width="100%" height="85%"></canvas>
 <script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
 	
