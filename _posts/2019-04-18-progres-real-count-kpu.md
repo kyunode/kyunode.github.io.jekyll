@@ -15,9 +15,9 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Updated*     | 20 Apr 2019 21:07:59 WITA  |
-| *Last Version*[^1] | 20 Apr 2019 21:00:03 WITA  |
-| *Last Progress*    | 5,43616% dari 813.350 TPS  |
+| *Last Updated*     | 21 Apr 2019 05:52:01 WITA  |
+| *Last Version*[^1] | 21 Apr 2019 05:45:03 WITA  |
+| *Last Progress*    | 7,69460% dari 813.350 TPS  |
 
 <p id="countdown"></p>
 
@@ -26,7 +26,7 @@ const now = moment();
 let endcount = moment("23 May 2019", "DD MMM YYYY");
 let diff = endcount.diff(now, 'day');
 let counter = document.getElementById('countdown');
-counter.innerHTML = 'Penghitungan suara diperkirakan berakhir dalam ' + diff + ' hari.';
+counter.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff + ' hari.';
 </script>
 
 <!--
@@ -101,7 +101,8 @@ counter.innerHTML = 'Penghitungan suara diperkirakan berakhir dalam ' + diff + '
                     { x: "190420 1545 03", y: 3974985 },
                     { x: "190420 1745 02", y: 4074791 },
                     { x: "190420 1845 03", y: 4292323 },
-                    { x: "190420 2100 03", y: 4654040 }
+                    { x: "190420 2100 03", y: 4654040 },
+                    { x: "190421 0545 03", y: 6524078 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -149,7 +150,8 @@ counter.innerHTML = 'Penghitungan suara diperkirakan berakhir dalam ' + diff + '
                     { x: "190420 1545 03", y: 3267585 },
                     { x: "190420 1745 02", y: 3351052 },
                     { x: "190420 1845 03", y: 3526024 },
-                    { x: "190420 2100 03", y: 3819116 }
+                    { x: "190420 2100 03", y: 3819116 },
+                    { x: "190421 0545 03", y: 5460061 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
