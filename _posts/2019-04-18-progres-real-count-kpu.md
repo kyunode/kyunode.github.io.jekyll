@@ -11,16 +11,16 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Visit*[^1]   | 19 Apr 2019 23:22:01 WITA  |
-| *Last Version*[^2] | 19 Apr 2019 23:15:02 WITA  |
-| *Last Progress*    | 3,78177% dari 813.350 TPS  |
+| *Last Visit*[^1]   | 20 Apr 2019 08:33:49 WITA  |
+| *Last Version*[^2] | 20 Apr 2019 08:30:03 WITA  |
+| *Last Progress*    | 4,60970% dari 813.350 TPS  |
 
 <!--
 | 					 | **Provinsi Sulawesi Selatan** |
 |--------------------|-------------------------------|
-| *Last Visit*  	 | 19 Apr 2019 23:22:19 WITA	 |
-| *Last Version*	 | 19 Apr 2019 23:15:02 WITA	 |
-| *Last Progress*    | 4,55701% dari 26.355 TPS      |
+| *Last Visit*  	 | 20 Apr 2019 07:09:08 WITA	 |
+| *Last Version*	 | 20 Apr 2019 07:00:03 WITA	 |
+| *Last Progress*    | 5,60804% dari 26.355 TPS      |
 -->
 
 [^1]: Kapan terakhir kali saya mengunjungi situs KPU.
@@ -80,7 +80,12 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1915 02", y: 2308495 },
                     { x: "190419 2015 03", y: 2527064 },
                     { x: "190419 2145 02", y: 2728037 },
-                    { x: "190419 2315 02", y: 3201594 }
+                    { x: "190419 2315 02", y: 3201594 },
+                    { x: "190420 0015 03", y: 3493887 },
+                    { x: "190420 0400 03", y: 3843519 },
+                    { x: "190420 0600 03", y: 3855607 },
+                    { x: "190420 0700 03", y: 3870392 },
+                    { x: "190420 0830 03", y: 3943595 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -116,7 +121,12 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1915 02", y: 1894876 },
                     { x: "190419 2015 03", y: 2065691 },
                     { x: "190419 2145 02", y: 2242280 },
-                    { x: "190419 2315 02", y: 2650827 }
+                    { x: "190419 2315 02", y: 2650827 },
+                    { x: "190420 0015 03", y: 2887964 },
+                    { x: "190420 0400 03", y: 3186560 },
+                    { x: "190420 0600 03", y: 3195689 },
+                    { x: "190420 0700 03", y: 3203292 },
+                    { x: "190420 0830 03", y: 3237714 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -140,7 +150,7 @@ Sajian data dalam bentuk tabel akan menyusul.
                         displayFormats: {
                         	hour: 'DD MMM HH:mm'
                         },
-                        unitStepSize: 4,
+                        unitStepSize: 6,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
@@ -160,6 +170,15 @@ Sajian data dalam bentuk tabel akan menyusul.
                     	}
                     }
                 }]
+            },
+           tooltips: {  //Code taken from https://github.com/chartjs/Chart.js/issues/411#issuecomment-289196968
+                enabled: true,
+
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel.toLocaleString() + ' suara';
+                    }
+                }
             },
             elements: {
             	line: {
@@ -212,7 +231,9 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1745 03", y: 62893 },
                     { x: "190419 2015 03", y: 79347 },
                     { x: "190419 2145 02", y: 87050 },
-                    { x: "190419 2315 02", y: 103409 }
+                    { x: "190419 2315 02", y: 103409 },
+                    { x: "190420 0400 03", y: 128911 },
+                    { x: "190420 0700 03", y: 129427 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -235,7 +256,9 @@ Sajian data dalam bentuk tabel akan menyusul.
                     { x: "190419 1745 03", y: 82478 },
                     { x: "190419 2015 03", y: 100003 },
                     { x: "190419 2145 02", y: 107239 },
-                    { x: "190419 2315 02", y: 121477 }
+                    { x: "190419 2315 02", y: 121477 },
+                    { x: "190420 0400 03", y: 146889 },
+                    { x: "190420 0700 03", y: 147415 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -311,7 +334,8 @@ Saya melakukan proses perekaman secara manual dengan mengunjungi
 [situs Info Publik Pemilu 2019 milik KPU](<https://pemilu2019.kpu.go.id/#/ppwp/hitung-suara/>){:target="_blank"}
 dalam jangka waktu tertentu dan mencatat data di dalamnya.
 Sebagai bukti, saya mengambil tangkapan layar saat berkunjung
-ke situs KPU.
+ke situs KPU dan
+[menyimpannya di *mega.nz*](<https://mega.nz/#F!QYBXGSxB!f_a_BKtplMGP6TOFUdAjbw>){:target="_blank"}.
 
 Saya tidak dapat menjamin bahwa saya dapat memperbarui data di
 atas secara rutin. *Saya juga tidak dapat menjamin bahwa data di
