@@ -15,9 +15,9 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Updated*     | 21 Apr 2019 20:39:31 WITA   |
-| *Last Version*[^1] | 21 Apr 2019 20:30:03 WITA   |
-| *Last Progress*    | 11,74439% dari 813.350 TPS  |
+| *Last Updated*     | 21 Apr 2019 21:35:22 WITA   |
+| *Last Version*[^1] | 21 Apr 2019 21:30:03 WITA   |
+| *Last Progress*    | 11,86131% dari 813.350 TPS  |
 
 <!--<p id="countup"></p>-->
 <p id="countdown"></p>
@@ -113,7 +113,9 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     { x: "190421 1315 03", y: 7943509 },
                     { x: "190421 1515 03", y: 8623734 },
                     { x: "190421 1645 03", y: 9061929 },
-                    { x: "190421 2030 03", y: 9899149 }
+                    { x: "190421 2030 03", y: 9899149 },
+                    { x: "190421 2115 03", y: 9992917 },
+                    { x: "190421 2130 03", y: 10003485 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -168,7 +170,9 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     { x: "190421 1315 03", y: 6775380 },
                     { x: "190421 1515 03", y: 7306995 },
                     { x: "190421 1645 03", y: 7661540 },
-                    { x: "190421 2030 03", y: 8281902 }
+                    { x: "190421 2030 03", y: 8281902 },
+                    { x: "190421 2115 03", y: 8347297 },
+                    { x: "190421 2130 03", y: 8357386 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
