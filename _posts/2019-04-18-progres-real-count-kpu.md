@@ -15,23 +15,23 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Updated*     | 21 Apr 2019 05:52:01 WITA  |
-| *Last Version*[^1] | 21 Apr 2019 05:45:03 WITA  |
-| *Last Progress*    | 7,69460% dari 813.350 TPS  |
+| *Last Updated*     | 21 Apr 2019 20:39:31 WITA   |
+| *Last Version*[^1] | 21 Apr 2019 20:30:03 WITA   |
+| *Last Progress*    | 11,74439% dari 813.350 TPS  |
 
-<p id="countup"></p>
+<!--<p id="countup"></p>-->
 <p id="countdown"></p>
 
 <script>
 const now = moment();
-let startcount = moment("17 Apr 2019", "DD MMM YYYY");
+//let startcount = moment("17 Apr 2019", "DD MMM YYYY");
 let endcount = moment("23 May 2019", "DD MMM YYYY");
 let diffdown = endcount.diff(now, 'day');
-let diffup = startcount.diff(now, 'day');
+//let diffup = startcount.diff(now, 'day');
 let counterdown = document.getElementById('countdown');
 counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diffdown + ' hari.';
-let counterup = document.getElementById('countup');
-counterup.innerHTML = 'Rekapitulasi suara telah berlangsung selama ' + Math.abs(diffup) + ' hari.';
+//let counterup = document.getElementById('countup');
+//counterup.innerHTML = 'Rekapitulasi suara telah berlangsung selama ' + Math.abs(diffup) + ' hari.';
 </script>
 
 <!--
@@ -107,7 +107,13 @@ counterup.innerHTML = 'Rekapitulasi suara telah berlangsung selama ' + Math.abs(
                     { x: "190420 1745 02", y: 4074791 },
                     { x: "190420 1845 03", y: 4292323 },
                     { x: "190420 2100 03", y: 4654040 },
-                    { x: "190421 0545 03", y: 6524078 }
+                    { x: "190421 0545 03", y: 6524078 },
+                    { x: "190421 0645 03", y: 6584978 },
+                    { x: "190421 1000 03", y: 6817504 },
+                    { x: "190421 1315 03", y: 7943509 },
+                    { x: "190421 1515 03", y: 8623734 },
+                    { x: "190421 1645 03", y: 9061929 },
+                    { x: "190421 2030 03", y: 9899149 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -156,7 +162,13 @@ counterup.innerHTML = 'Rekapitulasi suara telah berlangsung selama ' + Math.abs(
                     { x: "190420 1745 02", y: 3351052 },
                     { x: "190420 1845 03", y: 3526024 },
                     { x: "190420 2100 03", y: 3819116 },
-                    { x: "190421 0545 03", y: 5460061 }
+                    { x: "190421 0545 03", y: 5460061 },
+                    { x: "190421 0645 03", y: 5536979 },
+                    { x: "190421 1000 03", y: 5761443 },
+                    { x: "190421 1315 03", y: 6775380 },
+                    { x: "190421 1515 03", y: 7306995 },
+                    { x: "190421 1645 03", y: 7661540 },
+                    { x: "190421 2030 03", y: 8281902 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -181,7 +193,7 @@ counterup.innerHTML = 'Rekapitulasi suara telah berlangsung selama ' + Math.abs(
                         	hour: 'DD MMM HH:mm',
                         	day: 'DD MMM YYYY'
                         },
-                        unitStepSize: 8,
+                        unitStepSize: 12,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
