@@ -15,9 +15,9 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Updated*     | 22 Apr 2019 23:07:05 WITA   |
-| *Last Version*[^1] | 22 Apr 2019 23:00:05 WITA   |
-| *Last Progress*    | 17,45694% dari 813.350 TPS  |
+| *Last Updated*     | 23 Apr 2019 23:10:08 WITA   |
+| *Last Version*[^1] | 23 Apr 2019 23:00:05 WITA   |
+| *Last Progress*    | 23,86316% dari 813.350 TPS  |
 
 <!--<p id="countup"></p>-->
 <p id="countdown"></p>
@@ -127,7 +127,14 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     { x: "190422 1745 05", y: 13868892 },
                     { x: "190422 1915 05", y: 14087278 },
                     { x: "190422 2130 05", y: 14531078 },
-                    { x: "190422 2300 05", y: 14809611 }
+                    { x: "190422 2300 05", y: 14809611 },
+                    { x: "190423 0515 06", y: 15664144 },
+                    { x: "190423 0930 06", y: 16303798 },
+                    { x: "190423 1145 04", y: 16664317 },
+                    { x: "190423 1230 04", y: 16737534 },
+                    { x: "190423 2000 05", y: 18789350 },
+                    { x: "190423 2100 05", y: 19198789 },
+                    { x: "190423 2300 05", y: 20249187 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -196,7 +203,14 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     { x: "190422 1745 05", y: 11373470 },
                     { x: "190422 1915 05", y: 11542350 },
                     { x: "190422 2130 05", y: 11878308 },
-                    { x: "190422 2300 05", y: 12112135 }
+                    { x: "190422 2300 05", y: 12112135 },
+                    { x: "190423 0515 06", y: 12889427 },
+                    { x: "190423 0930 06", y: 13335122 },
+                    { x: "190423 1145 04", y: 13573048 },
+                    { x: "190423 1230 04", y: 13629609 },
+                    { x: "190423 2000 05", y: 15257189 },
+                    { x: "190423 2100 05", y: 15623028 },
+                    { x: "190423 2300 05", y: 16377736 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -216,12 +230,12 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                 xAxes: [{
                     type:       "time",
                     time:       {
-                        unit: 'hour',
+                        unit: 'day',
                         displayFormats: {
                         	hour: 'DD MMM HH:mm',
                         	day: 'DD MMM YYYY'
                         },
-                        unitStepSize: 16,
+                        unitStepSize: 1,
                         format: timeFormat,
                         tooltipFormat: 'DD MMM YYYY HH:mm:ss'
                     },
@@ -266,139 +280,10 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
         	}
         }
     };
-//
-//    window.onload = function () {
-//        var ctx       = document.getElementById("canvas").getContext("2d");
-//        window.myLine = new Chart(ctx, config);
-//    };
-</script>
-
-<!--<canvas id="canvasSulsel" width="100%" height="85%"></canvas>-->
-<script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
-	
-    var timeFormat = 'YYMMDD HHmm ss';
-    
-	Chart.defaults.global.defaultFontFamily = 'Source Sans Pro';
-	
-	function divideVotesSulsel(votess) {
-		var dvotess = votess / 1000;
-		return (dvotess);
-	}
-	
-    var config2 = {
-        type:    'line',
-        data:    {
-            datasets: [
-                {
-                    label: "Jokowi-Amin",
-                    data: [
-                    { x: "190418 1000 00", y: NaN },
-                    { x: "190418 2145 02", y: 17843 },
-                    { x: "190418 2215 03", y: 18867 },
-                    { x: "190419 0015 03", y: 25819 },
-                    { x: "190419 0645 03", y: 29000 },
-                    { x: "190419 0815 03", y: 29278 },
-                    { x: "190419 0845 02", y: 29484 },
-                    { x: "190419 1145 03", y: 30421 },
-                    { x: "190419 1430 03", y: 51463 },
-                    { x: "190419 1630 03", y: 61956 },
-                    { x: "190419 1745 03", y: 62893 },
-                    { x: "190419 2015 03", y: 79347 },
-                    { x: "190419 2145 02", y: 87050 },
-                    { x: "190419 2315 02", y: 103409 },
-                    { x: "190420 0400 03", y: 128911 },
-                    { x: "190420 0700 03", y: 129427 },
-                    { x: "190420 0945 03", y: 133382 },
-                    { x: "190420 1745 02", y: 135469 }
-                    ],
-                    fill: false,
-                    backgroundColor: 'rgba(253,106,2,0.5)',
-                    borderColor: 'orange',
-                    pointBackgroundColor: 'orange'
-                },
-                {
-                    label: "Prabowo-Sandi",
-                    data: [
-                    { x: "190418 1000 00", y: NaN },
-                    { x: "190418 2145 02", y: 25168 },
-                    { x: "190418 2215 03", y: 26661 },
-                    { x: "190419 0015 03", y: 32762 },
-                    { x: "190419 0645 03", y: 36827 },
-                    { x: "190419 0815 03", y: 37407 },
-                    { x: "190419 0845 02", y: 37465 },
-                    { x: "190419 1145 03", y: 38441 },
-                    { x: "190419 1430 03", y: 65197 },
-                    { x: "190419 1630 03", y: 81559 },
-                    { x: "190419 1745 03", y: 82478 },
-                    { x: "190419 2015 03", y: 100003 },
-                    { x: "190419 2145 02", y: 107239 },
-                    { x: "190419 2315 02", y: 121477 },
-                    { x: "190420 0400 03", y: 146889 },
-                    { x: "190420 0700 03", y: 147415 },
-                    { x: "190420 0945 03", y: 153093 },
-                    { x: "190420 1745 02", y: 155701 }
-                    ],
-                    fill:  false,
-                    backgroundColor: 'rgba(135,206,235,0.5)',
-                    borderColor: 'skyblue',
-                    pointBackgroundColor: 'skyblue'
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            title:      {
-                display: true,
-                text:    ['Hasil Perekaman Data Real Count KPU 2019', 'Wilayah Pemilihan Sulawesi Selatan'],
-                fontSize: 18
-            },
-            scales:     {
-                xAxes: [{
-                    type:       "time",
-                    time:       {
-                        unit: 'hour',
-                        displayFormats: {
-                        	hour: 'DD MMM HH:mm'
-                        },
-                        unitStepSize: 4,
-                        format: timeFormat,
-                        tooltipFormat: 'DD MMM YYYY HH:mm:ss'
-                    },
-                    scaleLabel: {
-                        display:     true,
-                        labelString: 'Tanggal/Versi'
-                    }
-                }],
-                yAxes: [{
-                    scaleLabel: {
-                        display:     true,
-                        labelString: 'Perolehan Suara'
-                    },
-                    ticks: {
-                    	userCallback: function(value) {
-                    		return divideVotesSulsel(value) + 'rb';
-                    	}
-                    }
-                }]
-            },
-            elements: {
-            	line: {
-                	tension: 0 // disables bezier curves
-            	}
-        	},
-        	legend: {
-        		labels: {
-        			fontSize: 14
-        		}
-        	}
-        }
-    };
 
     window.onload = function () {
         var ctx       = document.getElementById("canvas").getContext("2d");
         window.myLine = new Chart(ctx, config);
-        //var ctxSulsel = document.getElementById("canvasSulsel").getContext("2d");
-        //window.myLine = new Chart(ctxSulsel, config2);
     }
 </script>
 
@@ -421,16 +306,6 @@ atas bebas dari kecurangan dan/atau aktivitas peretasan*.
 
 Proses perekaman data dimulai tanggal 18 April 2019 dikarenakan
 KPU baru memberikan *raw data* pada tanggal tersebut.
-
-<!--Proses perekaman data untuk provinsi Sulawesi Selatan sedikit
-terlambat (18 April 21:53) *karena saya baru pengen ngerekam
-pukul segitu*. Khusus untuk provinsi Sulawesi Selatan, tidak ada
-tangkapan layar (*screenshot*) yang saya ambil.
-
-Karena tidak ada screenshot yang saya ambil, maka data ini tidak
-dapat saya pertanggungjawabkan. Oleh sebab itu, saya memutuskan
-untuk menyembunyikannya. Anda (mungkin) bisa melihatnya kembali
-dengan menggunakan fitur Inspect Element.-->
 
 Merasa ada kesalahan pada data di atas? Segera
 [buat *issue*](<https://github.com/qauland/qauland.github.io/issues/new>){:target="_blank"}
