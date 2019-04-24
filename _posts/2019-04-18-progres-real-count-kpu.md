@@ -15,9 +15,9 @@ Lihat [*disclaimer* (sangkalan)](#disclaimer-sangkalan).
 Rincian Data
 ---
 
-| *Last Updated*     | 23 Apr 2019 23:10:08 WITA   |
-| *Last Version*[^1] | 23 Apr 2019 23:00:05 WITA   |
-| *Last Progress*    | 23,86316% dari 813.350 TPS  |
+| *Last Updated*     | 24 Apr 2019 23:43:31 WITA   |
+| *Last Version*[^1] | 24 Apr 2019 23:30:04 WITA   |
+| *Last Progress*    | 30,81355% dari 813.350 TPS  |
 
 <!--<p id="countup"></p>-->
 <p id="countdown"></p>
@@ -134,7 +134,15 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     { x: "190423 1230 04", y: 16737534 },
                     { x: "190423 2000 05", y: 18789350 },
                     { x: "190423 2100 05", y: 19198789 },
-                    { x: "190423 2300 05", y: 20249187 }
+                    { x: "190423 2300 05", y: 20249187 },
+                    { x: "190424 0045 03", y: 21211315 },
+                    { x: "190424 0600 04", y: 22573499 },
+                    { x: "190424 1300 03", y: 24039659 },
+                    { x: "190424 1500 03", y: 24647140 },
+                    { x: "190424 1715 04", y: 25155872 },
+                    { x: "190424 1800 03", y: 25279837 },
+                    { x: "190424 2045 04", y: 25800354 },
+                    { x: "190424 2330 04", y: 26300100 }
                     ],
                     fill: false,
                     backgroundColor: 'rgba(253,106,2,0.5)',
@@ -210,7 +218,15 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     { x: "190423 1230 04", y: 13629609 },
                     { x: "190423 2000 05", y: 15257189 },
                     { x: "190423 2100 05", y: 15623028 },
-                    { x: "190423 2300 05", y: 16377736 }
+                    { x: "190423 2300 05", y: 16377736 },
+                    { x: "190424 0045 03", y: 17040090 },
+                    { x: "190424 0600 04", y: 18163090 },
+                    { x: "190424 1300 03", y: 19184873 },
+                    { x: "190424 1500 03", y: 19588085 },
+                    { x: "190424 1715 04", y: 19941082 },
+                    { x: "190424 1800 03", y: 20022609 },
+                    { x: "190424 2045 04", y: 20414721 },
+                    { x: "190424 2330 04", y: 20795976 }
                     ],
                     fill:  false,
                     backgroundColor: 'rgba(135,206,235,0.5)',
@@ -241,7 +257,7 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
                     },
                     scaleLabel: {
                         display:     true,
-                        labelString: 'Tanggal/Versi'
+                        labelString: 'Tanggal/Versi (dalam WITA)'
                     }
                 }],
                 yAxes: [{
