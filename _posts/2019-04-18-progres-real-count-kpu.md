@@ -2,6 +2,23 @@
 title: Progres dari Real Count KPU pada Pemilihan Presiden 2019
 ---
 
+<!-- HTML Meta Tags -->
+<meta name="description" content="Version history, tapi untuk data real count KPU.">
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="description" content="Version history, tapi untuk data real count KPU.">
+<meta itemprop="image" content="https://qauland.github.io/images/qdkpu.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://qauland.github.io/progres-real-count-kpu">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Version history, tapi untuk data real count KPU.">
+<meta property="og:image" content="https://qauland.github.io/images/qdkpu.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:description" content="Version history, tapi untuk data real count KPU.">
+<meta name="twitter:image" content="https://qauland.github.io/images/qdkpu.png">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
