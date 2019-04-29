@@ -50,7 +50,7 @@ counterdown.innerHTML = 'Rekapitulasi suara diperkirakan berakhir dalam ' + diff
 *Records*
 ---
 
-[Lihat tabulasi data di Google Spreadsheets.](https://docs.google.com/spreadsheets/d/1_FrbBFEcgaX2rU-BDzjBi-qhuVjWN3oLcfv1lrSBtks/edit?usp=sharing){:target="_blank"}
+[Lihat tabulasi data di Google Spreadsheets.](<https://docs.google.com/spreadsheets/d/1_FrbBFEcgaX2rU-BDzjBi-qhuVjWN3oLcfv1lrSBtks/edit?usp=sharing>){:target="_blank"}
 
 <canvas id="canvas" width="100%" height="85%"></canvas>
 <script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
