@@ -1,13 +1,5 @@
-qauland.github.io
-=================
+# qauland.github.io
 
-Duplicate of [Texts/Texts.github.io](https://github.com/Texts/Texts.github.io).
+A site based on [Lanyon](<https://github.com/poole/lanyon>) and [Poole](<http://getpoole.com>), further developments & changes by me.
 
-Based on [Lanyon](<https://github.com/poole/lanyon>) and [Poole](<http://getpoole.com>).
-
-Follow [instructions from texts.io](<http://www.texts.io/support/0017/>) to publish your blog on GitHub Pages.
-
-License
--------
-
-Open sourced under the [MIT license](<LICENSE.md>).
+Licensed under [MIT license](https://github.com/qauland/qauland.github.io/blob/master/LICENSE.md) except for contents inside [`fonts`](https://github.com/qauland/qauland.github.io/fonts/) folder.

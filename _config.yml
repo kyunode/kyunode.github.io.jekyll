@@ -1,6 +1,6 @@
 title:              Qauland's Sandbox
-tagline:            Bukan kotak pasir yang indah
-description:        Situs ini dibuat dengan tujuan untuk menguji coba. Beberapa artikel yang ada di situs ini mungkin akan muncul di blog WordPress saya.
+tagline:            
+description:        
 url:                http://qauland.github.io
 
 author:
@@ -11,7 +11,7 @@ author:
 # GitHub Pages / Jekyll configuration
 baseurl:            ''
 permalink:          /:title/
-paginate:           5
+paginate:           11
 defaults:
   -
     scope:

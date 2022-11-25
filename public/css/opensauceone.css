@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Open Sauce One';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/OpenSauceOne/OpenSauceOne-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sauce One';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/OpenSauceOne/OpenSauceOne-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sauce One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/OpenSauceOne/OpenSauceOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sauce One';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/OpenSauceOne/OpenSauceOne-Bold.ttf') format('truetype');
+}
