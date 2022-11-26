@@ -1,14 +1,14 @@
 <meta name="twitter:card" content="summary"/>
 <meta property="og:title" content="{{ page.title }}"/>
 
-{% if post.summary %}
-<meta name="twitter:description" content="{{ post.summary }}"/>
-<meta property="og:description" content="{{ post.summary }}"/>
+{% if page.summary %}
+<meta name="twitter:description" content="{{ page.summary }}"/>
+<meta property="og:description" content="{{ page.summary }}"/>
 {% endif %}
 
-{% if post.image %}
-<meta name="twitter:image" content="{{ post.image }}"/>
-<meta property="og:image" content="{{ post.image }}"/>
+{% if page.image %}
+<meta name="twitter:image" content="{{ page.image }}"/>
+<meta property="og:image" content="{{ page.image }}"/>
 {% else %}
 <meta name="twitter:image" content="{{ site.baseurl }}/images/qd.png"/>
 <meta property="og:image" content="{{ site.baseurl }}/images/qd.png"/>
