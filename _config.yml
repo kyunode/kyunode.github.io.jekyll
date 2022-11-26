@@ -12,6 +12,7 @@ author:
 baseurl:            ''
 permalink:          /:title/
 paginate:           11
+paginate_path:      "/hlm:num"
 defaults:
   -
     scope:

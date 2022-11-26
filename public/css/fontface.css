@@ -1,0 +1,78 @@
+/* Aleo */
+
+@font-face {
+  font-family: Aleo;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Aleo/Aleo-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: Aleo;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Aleo/Aleo-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: Aleo;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Aleo/Aleo-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Aleo;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Aleo/Aleo-Bold.ttf') format('truetype');
+}
+
+/* Inconsolata */
+
+@font-face {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Inconsolata/Inconsolata-Bold.ttf') format('truetype');
+}
+
+/* InteCV05 is a modified version of Inter - https://rsms.me/inter */
+
+@font-face {
+  font-family: InteCV05;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/InteCV05/InteCV05-I.otf') format('opentype');
+}
+@font-face {
+  font-family: InteCV05;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/InteCV05/InteCV05-BI.otf') format('opentype');
+}
+@font-face {
+  font-family: InteCV05;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/InteCV05/InteCV05-R.otf') format('opentype');
+}
+@font-face {
+  font-family: InteCV05;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/InteCV05/InteCV05-B.otf') format('opentype');
+}

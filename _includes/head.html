@@ -8,7 +8,7 @@
 
   <title>
     {% if page.title == "Beranda" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
@@ -17,9 +17,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/publicsans.css" type="text/css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/opensauceone.css" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/fontface.css" type="text/css">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
@@ -32,8 +30,8 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
   <!-- Highlight.js -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
   <style>.hljs{background:transparent;}</style>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </head>

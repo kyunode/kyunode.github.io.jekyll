@@ -22,7 +22,7 @@ title: Beranda
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Lebih Lama</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/hlm{{paginator.next_page}}">Lebih Lama</a>
   {% else %}
     <span class="pagination-item older">Lebih Lama</span>
   {% endif %}
@@ -30,7 +30,7 @@ title: Beranda
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/">Lebih Baru</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Lebih Baru</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/hlm{{paginator.previous_page}}">Lebih Baru</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Lebih Baru</span>
