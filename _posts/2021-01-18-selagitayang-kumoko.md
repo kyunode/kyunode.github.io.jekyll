@@ -1,7 +1,7 @@
 ---
 title: "SelagiTayang: So I'm a Spider, So What?"
 author: Qauland
-summary: "Tulisan singkat terhadap seri animasi So I'm a Spider, So What?"
+description: "Tulisan singkat terhadap seri animasi So I'm a Spider, So What?"
 last_modified_at: 2022-02-02
 ---
 

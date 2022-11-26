@@ -2,7 +2,7 @@
 title: "SelagiTayang: Laid-Back Camp Season 2"
 author: Qauland
 image: https://i.postimg.cc/PJb1d6XK/ycs2.jpg
-summary: "Tulisan singkat terhadap Laid-Back Camp Season 2."
+description: "Tulisan singkat terhadap Laid-Back Camp Season 2."
 last_modified_at: 2021-04-02
 ---
 

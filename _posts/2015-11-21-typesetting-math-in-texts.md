@@ -1,9 +1,21 @@
 ---
 title: "Typesetting Math"
-summary: "Sebuah tutorial (dalam bahasa Inggris) untuk menulis rumus matematika di web."
+description: "Sebuah tutorial (dalam bahasa Inggris) untuk menulis rumus matematika di web."
 ---
 
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+*Untuk menulis rumus matematika, tambahkan baris berikut di awal pos (setelah* front matter*):*
+
+```html
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+```
+
 *Artikel ini akan diterjemahkan ke dalam bahasa Indonesia suatu hari nanti. Mungkin.*
+
+---
 
 Basic math
 ----------

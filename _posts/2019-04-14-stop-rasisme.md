@@ -1,6 +1,6 @@
 ---
 title: "Stop Rasisme"
-summary: "Peringatan: *Copypasta*."
+description: "Peringatan: Copypasta."
 ---
 
 *Peringatan: Copypasta.*

@@ -1,7 +1,6 @@
 title:              Qauland's Sandbox
-tagline:            
-description:        
-url:                http://qauland.github.io
+description:        Cuma situs web biasa.
+url:                https://qauland.github.io
 
 author:
   name:             Qauland
@@ -25,3 +24,6 @@ head_scripts:
 
 plugins:
   - jekyll-paginate
+
+twitter:
+  card:             summary

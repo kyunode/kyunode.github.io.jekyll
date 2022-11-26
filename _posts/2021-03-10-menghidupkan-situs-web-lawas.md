@@ -1,7 +1,7 @@
 ---
 title: "Menghidupkan Situs Pertama yang Saya Buat Sendiri"
 author: Qauland
-summary: "Dibuat jauh sebelum saya kenal GitHub Pages."
+description: "Dibuat jauh sebelum saya kenal GitHub Pages."
 ---
 
 Sejak zaman saya duduk di bangku SMA/MA dulu, saya sudah punya keinginan untuk membuat situs sendiri.

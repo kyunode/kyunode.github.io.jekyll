@@ -2,7 +2,7 @@
 title: "SelagiTayang: Life with an Ordinary Guy who Reincarnated into a Total Fantasy Knockout"
 author: Qauland
 image: https://i.postimg.cc/3wmJGZWS/fbko.jpg
-summary: "Tulisan singkat terhadap seri animasi Life with an Ordinary Guy who Reincarnated into a Total Fantasy Knockout."
+description: "Tulisan singkat terhadap seri animasi Life with an Ordinary Guy who Reincarnated into a Total Fantasy Knockout."
 last_modified_at: 2022-02-23
 ---
 
