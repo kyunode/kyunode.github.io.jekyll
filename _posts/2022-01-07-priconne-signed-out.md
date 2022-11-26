@@ -1,13 +1,8 @@
 ---
 title:  "Terima kasih, Priconne. Saya pensi."
-author: qauland
-classes: wide
-tags:
-   - princess connect
-header:
-   overlay_image: https://i.postimg.cc/6pjw4XSY/20220106-1.jpg
-   overlay_filter: 0.35
-excerpt: "Peringatan: Artikel ini mengandung *spoiler*."
+author: Qauland
+image: https://i.postimg.cc/6pjw4XSY/20220106-1.jpg
+summary: "Peringatan: Artikel ini mengandung *spoiler*."
 ---
 
 Berikut adalah "pencapaian" saya selama setahun bermain.

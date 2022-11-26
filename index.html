@@ -12,9 +12,23 @@ title: Beranda
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date"><img src="{{ site.baseurl }}/images/date.svg" alt="Tanggal" style="vertical-align:text-top;display:inline;width:24px;height:24px;margin:0px 7px 0px 0px"></img>{{ post.date | date_to_string }}
+    
+    {% if post.last_modified_at %}
+      <img src="{{ site.baseurl }}/images/update.svg" alt="Diperbarui" style="vertical-align:text-top;display:inline;width:24px;height:24px;margin:0px 7px 0px"></img>{{ post.last_modified_at | date_to_string }}
+    {% endif %}
 
-    {{ post.content | strip_html | truncatewords: 25 }}
+    {% if post.author %}
+      <br/><img src="{{ site.baseurl }}/images/acc.svg" alt="Avatar" style="vertical-align:text-top;display:inline;width:24px;height:24px;margin:0px 7px 0px 0px"></img>{{ post.author }}
+    {% endif %}
+
+    </span>
+
+    {% if post.summary %}
+        {{ post.summary }}
+    {% else%}
+        {{ post.content | strip_html | truncatewords: 25 }}
+    {% endif %}
 
   </div>
   {% endfor %}

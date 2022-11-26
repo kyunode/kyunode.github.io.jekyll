@@ -1,8 +1,6 @@
 ---
 title: "[LAWAS] Skor Pribadi Saya untuk Beberapa Anime Musiman, dalam Chart.js"
-author: qauland
-tags:
-   - chart.js
+author: Qauland
 last_modified_at: 2021-07-12
 ---
 

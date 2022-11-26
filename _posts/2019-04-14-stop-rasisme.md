@@ -1,5 +1,6 @@
 ---
-title: Stop Rasisme
+title: "Stop Rasisme"
+summary: "Peringatan: *Copypasta*."
 ---
 
 *Peringatan: Copypasta.*

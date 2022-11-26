@@ -1,9 +1,9 @@
 ---
 title: "Mencari Jumlah Penduduk Suatu Desa/Kelurahan tanpa Harus ke Kantor Desa/Lurah"
+author: Qauland
 image: https://i.postimg.cc/7Y5rwPCt/Polish-20201126-202713160.jpg
+summary: "Apakah Anda ingin mencari tau jumlah penduduk dari suatu desa/kelurahan, tapi malas untuk pergi ke kantor desa/kelurahan tersebut?"
 ---
-
-![](https://i.postimg.cc/7Y5rwPCt/Polish-20201126-202713160.jpg)
 
 Apakah Anda ingin mencari tau jumlah penduduk dari suatu desa/kelurahan, tapi malas untuk pergi ke kantor desa/kelurahan tersebut? Atau Anda orangnya paranoid dan takut terinfeksi virus kalau pergi ke kantor desa/kelurahan? Jangan khawatir, BPS dapat membantu Anda.
 

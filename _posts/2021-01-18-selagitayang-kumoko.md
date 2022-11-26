@@ -1,15 +1,7 @@
 ---
 title: "SelagiTayang: So I'm a Spider, So What?"
-author: qauland
-categories:
-   - SelagiTayang
-tags:
-   - kumo desu ga nani ka
-header:
-   overlay_image: https://i.postimg.cc/wMDw27Wb/125222191.png
-   overlay_filter: 0.35
-   caption: "Tangkapan layar dari salah satu episode anime ini"
-excerpt: "Tulisan singkat terhadap seri animasi So I'm a Spider, So What?"
+author: Qauland
+summary: "Tulisan singkat terhadap seri animasi So I'm a Spider, So What?"
 last_modified_at: 2022-02-02
 ---
 

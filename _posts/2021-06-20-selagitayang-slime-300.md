@@ -1,16 +1,8 @@
 ---
 title: "SelagiTayang: I've Been Killing Slimes for 300 Years and Maxed Out My Level"
-author: qauland
-categories:
-   - SelagiTayang
-tags:
-   - max level witch
-   - unfinished
-header:
-   overlay_image: https://i.postimg.cc/mgr2N9wm/106200638-1.jpg
-   overlay_filter: 0.35
-   caption: "*Official art*"
-excerpt: "Tulisan singkat terhadap seri animasi I've Been Killing Slimes for 300 Years and Maxed Out My Level."
+author: Qauland
+image: https://i.postimg.cc/mgr2N9wm/106200638-1.jpg
+summary: "Tulisan singkat terhadap seri animasi I've Been Killing Slimes for 300 Years and Maxed Out My Level."
 last_modified_at: 2022-02-03
 ---
 

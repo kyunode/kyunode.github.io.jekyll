@@ -1,15 +1,8 @@
 ---
 title: "SelagiTayang: Non Non Biyori Nonstop"
-author: qauland
-categories:
-   - SelagiTayang
-tags:
-   - non non biyori
-header:
-   overlay_image: https://i.postimg.cc/YCCxGnwP/125350203.png
-   overlay_filter: 0.35
-   caption: "Tangkapan layar dari *opening* anime ini"
-excerpt: "Tulisan singkat terhadap seri animasi Non Non Biyori Nonstop."
+author: Qauland
+image: https://i.postimg.cc/YCCxGnwP/125350203.png
+summary: "Tulisan singkat terhadap seri animasi Non Non Biyori Nonstop."
 last_modified_at: 2021-04-07
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: "Menghidupkan Situs Pertama yang Saya Buat Sendiri"
-author: qauland
-header:
-   overlay_image: assets/images/maips-takresmi.png
-   overlay_filter: rgba(37,42,52,0.85)
-excerpt: "Dibuat jauh sebelum saya kenal GitHub Pages."
+author: Qauland
+summary: "Dibuat jauh sebelum saya kenal GitHub Pages."
 ---
 
 Sejak zaman saya duduk di bangku SMA/MA dulu, saya sudah punya keinginan untuk membuat situs sendiri.

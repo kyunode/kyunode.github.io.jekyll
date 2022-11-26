@@ -1,5 +1,6 @@
 ---
-title: Texts + GitHub Pages = Blog
+title: "Texts + GitHub Pages = Blog"
+summary: "Texts + GitHub Pages = Blog"
 ---
 
 *Artikel ini akan diterjemahkan ke dalam bahasa Indonesia suatu hari nanti. Mungkin.*

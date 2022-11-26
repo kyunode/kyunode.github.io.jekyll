@@ -1,5 +1,6 @@
 ---
-title: Typesetting Math in Texts
+title: "Typesetting Math"
+summary: "Sebuah tutorial (dalam bahasa Inggris) untuk menulis rumus matematika di web."
 ---
 
 *Artikel ini akan diterjemahkan ke dalam bahasa Indonesia suatu hari nanti. Mungkin.*

@@ -1,15 +1,8 @@
 ---
 title: "SelagiTayang: Kiat Pemulihan Negara Berutang Ala Pangeran Genius"
-author: qauland
-categories:
-   - SelagiTayang
-tags:
-   - genius prince
-header:
-   overlay_image: https://i.postimg.cc/j5hxgdHy/rnod.jpg
-   overlay_filter: 0.35
-   caption: "*Official art*"
-excerpt: "Tulisan singkat terhadap seri animasi Kiat Pemulihan Negara Berutang Ala Pangeran Genius."
+author: Qauland
+image: https://i.postimg.cc/j5hxgdHy/rnod.jpg
+summary: "Tulisan singkat terhadap seri animasi Kiat Pemulihan Negara Berutang Ala Pangeran Genius."
 last_modified_at: 2022-02-23
 ---
 

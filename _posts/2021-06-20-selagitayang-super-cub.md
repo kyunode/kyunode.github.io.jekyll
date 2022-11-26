@@ -1,16 +1,8 @@
 ---
 title: "SelagiTayang: Super Cub"
-author: qauland
-categories:
-   - SelagiTayang
-tags:
-   - super cub
-   - unfinished
-header:
-   overlay_image: https://i.postimg.cc/02PH4dh0/120060935-1.jpg
-   overlay_filter: 0.35
-   caption: "*Official art*"
-excerpt: "Tulisan singkat terhadap seri animasi Super Cub."
+author: Qauland
+image: https://i.postimg.cc/02PH4dh0/120060935-1.jpg
+summary: "Tulisan singkat terhadap seri animasi Super Cub."
 last_modified_at: 2022-02-03
 ---
 
