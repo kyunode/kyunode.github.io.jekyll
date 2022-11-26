@@ -167,9 +167,10 @@ pre {
   font-size: .8rem;
   line-height: 1.4;
   white-space: pre;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap;
   word-break: break-all;
-  word-wrap: break-word;
+  word-wrap: break-word; */
+  overflow-x: auto;
   background-color: #f9f9f9;
 }
 pre code {
@@ -236,10 +237,12 @@ img {
 
 /* Tables */
 table {
+  display: block;
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 td,
 th {
@@ -428,3 +431,47 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+.icon-dateau {
+  vertical-align: text-top;
+  display: inline;
+  width:1.1em;
+  height:1.1em;
+  margin: 0 7px 0 0;
+}
+
+.icon-datemod {
+  vertical-align: text-top;
+  display: inline;
+  width:1.1em;
+  height:1.1em;
+  margin: 0 7px 0;
+}
+
+/* MathJax-related */
+.MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Scrollbar
+@media (min-width: 38em) {
+    ::-webkit-scrollbar {
+      width: 0.45em
+    }
+    ::-webkit-scrollbar-track {
+      background: grey;
+      box-shadow: inset 0 0 0 0.15em white;
+      border-radius: 0.45em;
+    }
+    ::-webkit-scrollbar-thumb {
+      width: 0.45em;
+      background: #555; 
+      border-radius: 0.45em;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      width: 0.45em;
+      background: #888; 
+    }
+}
+*/

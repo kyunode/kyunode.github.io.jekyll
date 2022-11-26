@@ -4,14 +4,14 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date"><img src="{{ site.baseurl }}/images/date.svg" alt="Tanggal" style="vertical-align:text-top;display:inline;width:24px;height:24px;margin:0px 7px 0px 0px"></img>{{ page.date | date_to_string }}
+  <span class="post-date"><img class="icon-dateau" src="{{ site.baseurl }}/images/date.svg" alt="Tanggal"></img>{{ page.date | date_to_string }}
 
     {% if page.last_modified_at %}
-      <img src="{{ site.baseurl }}/images/update.svg" alt="Diperbarui" style="vertical-align:text-top;display:inline;width:24px;height:24px;margin:0px 7px 0px"></img>{{ page.last_modified_at | date_to_string }}
+      <img class="icon-datemod" src="{{ site.baseurl }}/images/update.svg" alt="Diperbarui"></img>{{ page.last_modified_at | date_to_string }}
     {% endif %}
 
     {% if page.author %}
-      <br/><img src="{{ site.baseurl }}/images/acc.svg" alt="Avatar" style="vertical-align:text-top;display:inline;width:24px;height:24px;margin:0px 7px 0px 0px"></img>{{ page.author }}
+      <br/><img class="icon-dateau" src="{{ site.baseurl }}/images/acc.svg" alt="Avatar"></img>{{ page.author }}
     {% endif %}
 
   </span>
