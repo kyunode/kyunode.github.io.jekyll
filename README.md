@@ -1,4 +1,4 @@
-# qauland.github.io
+# kyunode.github.io
 
 Berdasarkan [Lanyon](<https://github.com/poole/lanyon>) dan [Poole](<http://getpoole.com>), disunting dan dikembangkan oleh saya.
 
