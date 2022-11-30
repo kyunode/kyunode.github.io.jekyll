@@ -1,10 +1,10 @@
 title:              Qauland's Sandbox
 description:        Cuma situs web biasa.
-url:                https://qauland.github.io
+url:                https://kyunode.github.io
 
 author:
   name:             Qauland
-  url:              https://twitter.com/qauland
+  url:              https://twitter.com/kyunode
   email:            ktbstsn@outlook.co.id
 
 # GitHub Pages / Jekyll configuration
@@ -26,4 +26,4 @@ plugins:
   - jekyll-paginate
 
 twitter:
-  username:         qauland
+  username:         kyunode
