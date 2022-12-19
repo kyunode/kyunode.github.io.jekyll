@@ -11,6 +11,7 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/home.svg" alt="Rumah" style="vertical-align:text-top;display:inline;width:18px;height:18px;margin:0px 7px 0px 0px"></img>Beranda</a>
     <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="https://github.com/kyunode/kyunode.github.io"><img src="{{ site.baseurl }}/images/github.svg" alt="Logo GitHub" style="vertical-align:text-top;display:inline;width:18px;height:18px;margin:0px 7px 0px 0px"></img>Repositori</a>
+    <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" rel="me" href="https://social.vivaldi.net/@kyunode">@kyunode@vivaldi.net</a>
 
 <!--    {% assign posts_list = site.posts | sort:"url" %}
     {% for node in posts_list %}
