@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -150,7 +150,7 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Inconsolata, Menlo, Monaco, "Courier New", monospace;
+  font-family: "IBM Plex Mono", Inconsolata, Menlo, Monaco, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
@@ -191,7 +191,7 @@ pre code {
 
 /* Gist via GitHub Pages */
 .gist .gist-file {
-  font-family: Inconsolata, Menlo, Monaco, "Courier New", monospace !important;
+  font-family: "IBM Plex Mono", Inconsolata, Menlo, Monaco, "Courier New", monospace !important;
 }
 .gist .markdown-body {
   padding: 15px;
@@ -213,7 +213,7 @@ pre code {
 
 /* Quotes */
 blockquote {
-  font-family: Aleo, serif;
+  /* font-family: Aleo, serif; */
   font-style: italic;
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -251,9 +251,9 @@ th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
 }
-th {
+/* th {
   font-family: Aleo, serif;
-}
+} */
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
@@ -397,7 +397,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: InteCV05, Helvetica, Arial, sans-serif;
+  font-family: "Hanken Grotesk", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }

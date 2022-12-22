@@ -1,1 +1,0 @@
-InteCV05 is a modified version of Inter (https://rsms.me/inter) with OpenType feature cv05 (+cv11 on italic) enabled by default.

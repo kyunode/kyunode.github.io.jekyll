@@ -1,78 +1,92 @@
-/* Aleo */
+/* IBM Plex® Sans */
 
 @font-face {
-  font-family: Aleo;
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/Aleo/Aleo-Italic.ttf') format('truetype');
+  src: url('/fonts/IBMPlex/IBMPlexSans-TextItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: Aleo;
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/Aleo/Aleo-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlex/IBMPlexSans-BoldItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: Aleo;
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/Aleo/Aleo-Regular.ttf') format('truetype');
+  src: url('/fonts/IBMPlex/IBMPlexSans-Text.woff2') format('woff2');
 }
 @font-face {
-  font-family: Aleo;
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/Aleo/Aleo-Bold.ttf') format('truetype');
+  src: url('/fonts/IBMPlex/IBMPlexSans-Bold.woff2') format('woff2');
 }
 
-/* Inconsolata */
+/* IBM Plex® Mono */
 
 @font-face {
-  font-family: Inconsolata;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: Inconsolata;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/Inconsolata/Inconsolata-Bold.ttf') format('truetype');
-}
-
-/* InteCV05 is a modified version of Inter - https://rsms.me/inter */
-
-@font-face {
-  font-family: InteCV05;
+  font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/InteCV05/InteCV05-I.otf') format('opentype');
+  src: url('/fonts/IBMPlex/IBMPlexMono-TextItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: InteCV05;
+  font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/InteCV05/InteCV05-BI.otf') format('opentype');
+  src: url('/fonts/IBMPlex/IBMPlexMono-BoldItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: InteCV05;
+  font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/InteCV05/InteCV05-R.otf') format('opentype');
+  src: url('/fonts/IBMPlex/IBMPlexMono-Text.woff2') format('woff2');
 }
 @font-face {
-  font-family: InteCV05;
+  font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/InteCV05/InteCV05-B.otf') format('opentype');
+  src: url('/fonts/IBMPlex/IBMPlexMono-Bold.woff2') format('woff2');
+}
+
+/* Hanken Grotesk */
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/HankenGrotesk/HankenGrotesk-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/HankenGrotesk/HankenGrotesk-BoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/HankenGrotesk/HankenGrotesk-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/HankenGrotesk/HankenGrotesk-Bold.woff2') format('woff2');
 }
