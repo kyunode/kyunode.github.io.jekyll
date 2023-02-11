@@ -13,7 +13,7 @@ description: "Sebuah tutorial (dalam bahasa Inggris) untuk menulis rumus matemat
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 ```
 
-*Artikel ini akan diterjemahkan ke dalam bahasa Indonesia suatu hari nanti. Mungkin.*
+*Pos ini akan diterjemahkan ke dalam bahasa Indonesia suatu hari nanti. Mungkin.*
 
 ---
 
