@@ -2,7 +2,7 @@
 title:  "Terima kasih, Priconne. Saya pensi."
 author: Qauland
 image: https://i.postimg.cc/6pjw4XSY/20220106-1.jpg
-description: "Peringatan: Artikel ini mengandung spoiler."
+description: "Peringatan: Pos ini mengandung spoiler."
 ---
 
 Berikut adalah "pencapaian" saya selama setahun bermain.
