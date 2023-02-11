@@ -4,7 +4,7 @@ author: Qauland
 last_modified_at: 2021-07-12
 ---
 
-Artikel ini **mungkin berat untuk dimuat**. Buka artikel ini di *desktop* untuk mendapatkan tata letak (*layout*) yang bagus.
+Pos ini **mungkin berat untuk dimuat**. Buka pos ini di *desktop* untuk mendapatkan tata letak (*layout*) yang bagus.
 
 > Penafian: Ini adalah skor personal saya dan tidak mencerminkan kualitas anime yang sebenarnya. Skor sebelum 1 April 2021 mungkin tidak akurat.
 

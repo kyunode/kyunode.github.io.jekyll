@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post-title">{{ page.title }}</h1><hr/>
+<!--
   <span class="post-date"><img class="icon-dateau" src="{{ site.baseurl }}/images/date.svg" alt="Tanggal"></img>{{ page.date | date_to_string }}
 
     {% if page.last_modified_at %}
@@ -15,6 +16,7 @@ layout: default
     {% endif %}
 
   </span>
+-->
 
   {% if page.image %}
     <img src="{{ page.image }}" style="width:100%;height=auto"></img>
@@ -22,8 +24,21 @@ layout: default
   {{ content }}
 </div>
 
-<div class="related">
-  <h2>Artikel Lainnya</h2>
+<hr/>
+<span class="post-date">Pos ini ditulis pada {{ page.date | date_to_string }}
+
+    {% if page.last_modified_at %}
+      (diperbarui pada {{ page.last_modified_at | date_to_string }})
+    {% endif %}
+
+    {% if page.author %}
+      oleh {{ page.author }}.
+    {% endif %}
+
+  </span>
+
+<!-- <div class="related">
+  <h2>Pos Lainnya</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
@@ -36,4 +51,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-</div>
+</div> -->

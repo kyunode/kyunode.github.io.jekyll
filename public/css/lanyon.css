@@ -42,11 +42,18 @@ body {
 
 html {
   font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+ }
+
+h1 {
+  font-family: "Source Serif 4", Cambria, serif;
+  font-weight: 600;
+  color: #313131;
+  letter-spacing: -.025rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Hanken Grotesk", Helvetica, Arial, sans-serif; /* prev Aleo */
-  font-weight: 400;
+h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif; /* prev Aleo */
+  font-weight: 500;
   color: #313131;
   letter-spacing: -.025rem;
 }
