@@ -2,6 +2,7 @@
 title: "SelagiTayang: Non Non Biyori Nonstop"
 author: Qauland
 image: https://i.postimg.cc/YCCxGnwP/125350203.png
+imgcap: "Tangkapan layar dari *opening* anime ini"
 description: "Tulisan singkat terhadap seri animasi Non Non Biyori Nonstop."
 last_modified_at: 2021-04-07
 ---

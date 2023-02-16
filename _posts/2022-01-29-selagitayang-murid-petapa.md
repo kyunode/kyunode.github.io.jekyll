@@ -2,6 +2,7 @@
 title: "SelagiTayang: Petapa Sihir yang Mengaku sebagai Murid Petapa Sihir"
 author: Qauland
 image: https://i.postimg.cc/1tSRrNq9/59665229.jpg
+imgcap: "[**クレープデート**](https://www.pixiv.net/i/59665229) oleh 藤ちょこ"
 description: "Tulisan singkat terhadap seri animasi Petapa Sihir yang Mengaku sebagai Murid Petapa Sihir."
 last_modified_at: 2022-02-23
 ---

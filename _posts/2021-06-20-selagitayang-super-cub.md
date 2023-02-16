@@ -2,6 +2,7 @@
 title: "SelagiTayang: Super Cub"
 author: Qauland
 image: https://i.postimg.cc/02PH4dh0/120060935-1.jpg
+imgcap: "*Official art*"
 description: "Tulisan singkat terhadap seri animasi Super Cub."
 last_modified_at: 2022-02-03
 ---

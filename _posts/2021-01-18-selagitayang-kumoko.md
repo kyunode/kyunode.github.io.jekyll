@@ -1,6 +1,8 @@
 ---
 title: "SelagiTayang: So I'm a Spider, So What?"
 author: Qauland
+image: https://i.postimg.cc/wMDw27Wb/125222191.png
+imgcap: "Tangkapan layar dari salah satu episode anime ini"
 description: "Tulisan singkat terhadap seri animasi So I'm a Spider, So What?"
 last_modified_at: 2022-02-02
 ---

@@ -2,6 +2,7 @@
 title: "SelagiTayang: I've Been Killing Slimes for 300 Years and Maxed Out My Level"
 author: Qauland
 image: https://i.postimg.cc/mgr2N9wm/106200638-1.jpg
+imgcap: "*Official art*"
 description: "Tulisan singkat terhadap seri animasi I've Been Killing Slimes for 300 Years and Maxed Out My Level."
 last_modified_at: 2022-02-03
 ---
