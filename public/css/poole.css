@@ -233,7 +233,7 @@ blockquote p:last-child {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
+  margin: 1rem auto 1rem auto;
   border-radius: 5px;
 }
 
@@ -457,6 +457,27 @@ a.pagination-item:hover {
 .MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+/* Cover image and caption */
+
+#cover {
+  width:      100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#caption {
+  position:         absolute;
+  margin-left:      5px;
+  bottom:           5px;
+  right:            5px;
+  font-size:        65%;
+  background-color: rgba(255,255,255,0.7);
+  border-style:     solid;
+  border-width:     3px;
+  border-color:     rgba(0,0,0,0);
+  border-radius:    5px;
 }
 
 /* Scrollbar

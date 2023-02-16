@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1><hr/>
+  <h1 class="post-title">{{ page.title }}</h1>
 <!--
   <span class="post-date"><img class="icon-dateau" src="{{ site.baseurl }}/images/date.svg" alt="Tanggal"></img>{{ page.date | date_to_string }}
 
@@ -19,12 +19,18 @@ layout: default
 -->
 
   {% if page.image %}
-    <img src="{{ page.image }}" style="width:100%;height=auto"></img>
+    <div style="position:relative;">    
+      <img id="cover" src="{{ page.image }}"></img>
+      {% if page.imgcap %}
+        <div id="caption">{{ page.imgcap | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endif %}
+    </div>
+  {% else %}
+    <hr/>
   {% endif %}
   {{ content }}
 </div>
 
-<hr/>
 <span class="post-date">Pos ini ditulis pada {{ page.date | date_to_string }}
 
     {% if page.last_modified_at %}
