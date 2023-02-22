@@ -62,17 +62,17 @@ title: Beranda
 <div style="text-align:center;margin-top:.5rem;margin-bottom:1.25rem;">
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a href="{{ site.baseurl }}/">&#129092; </a>
+      <a href="{{ site.baseurl }}/">&#9664; </a>
     {% else %}
-      <a href="{{ site.baseurl }}/hlm{{paginator.previous_page}}">&#129092; </a>
+      <a href="{{ site.baseurl }}/hlm{{paginator.previous_page}}">&#9664; </a>
     {% endif %}
   {% else %}
-    <span>&#129092; </span>
+    <span>&#9664; </span>
   {% endif %}
   &#8194;Halaman {{paginator.page}} dari {{paginator.total_pages}}&#8194;
   {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}/hlm{{paginator.next_page}}"> &#129094;</a>
+    <a href="{{ site.baseurl }}/hlm{{paginator.next_page}}"> &#9654;</a>
   {% else %}
-    <span> &#129094;</span>
+    <span> &#9654;</span>
   {% endif %}
 </div>
