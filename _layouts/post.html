@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post-title">{{ page.title | markdownify }}</h1>
 <!--
   <span class="post-date"><img class="icon-dateau" src="{{ site.baseurl }}/images/date.svg" alt="Tanggal"></img>{{ page.date | date_to_string }}
 
@@ -31,30 +31,18 @@ layout: default
   {{ content }}
 </div>
 
-<span class="post-date">Pos ini ditulis pada {{ page.date | date_to_string }}
+<span class="post-date">{{ page.date | date_to_string }}
 
     {% if page.last_modified_at %}
-      (diperbarui pada {{ page.last_modified_at | date_to_string }})
+      &#9656; {{ page.last_modified_at | date_to_string }}
     {% endif %}
 
     {% if page.author %}
-      oleh {{ page.author }}.
+      &middot; {{ page.author }}
     {% endif %}
 
-  </span>
+</span>
 
-<!-- <div class="related">
-  <h2>Pos Lainnya</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div> -->
+<div style="margin-top:.25rem;margin-bottom:1rem;font-size:87%;color:#9a9a9a;">
+Ada komentar/masalah terkait pos di atas? Silakan <a href="https://github.com/kyunode/kyunode.github.io/issues">buat <i>issue</i></a> di repositori situs ini di GitHub, atau <a href="https://social.vivaldi.net/@kyunode">hubungi pemilik situs ini</a> di Mastodon.
+</div>

@@ -6,23 +6,24 @@ title: Beranda
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <span class="post-date"><img class="icon-dateau" src="{{ site.baseurl }}/images/date.svg" alt="Tanggal"></img>{{ post.date | date_to_string }}
+    <span class="post-date">{{ post.date | date_to_string }}
     
     {% if post.last_modified_at %}
-      <img class="icon-datemod" src="{{ site.baseurl }}/images/update.svg" alt="Diperbarui"></img>{{ post.last_modified_at | date_to_string }}
+      &#9656; {{ post.last_modified_at | date_to_string }}
     {% endif %}
 
     {% if post.author %}
-      <br/><img class="icon-dateau" src="{{ site.baseurl }}/images/acc.svg" alt="Avatar"></img>{{ post.author }}
+      &middot; {{ post.author }}
     {% endif %}
 
     </span>
+
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title | markdownify | remove:'<p>' | remove:'</p>' }}
+      </a>
+    </h1>
 
     {% if post.description %}
         {{ post.description }}
@@ -34,6 +35,7 @@ title: Beranda
   {% endfor %}
 </div>
 
+<!--
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}/hlm{{paginator.next_page}}">Lebih Lama</a>
@@ -50,4 +52,23 @@ title: Beranda
     <span class="pagination-item newer">Lebih Baru</span>
   {% endif %}
 </div>
+-->
 
+<hr>
+<div style="text-align:center;margin-top:.5rem;margin-bottom:1.25rem;">
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="{{ site.baseurl }}/">&#129092; </a>
+    {% else %}
+      <a href="{{ site.baseurl }}/hlm{{paginator.previous_page}}">&#129092; </a>
+    {% endif %}
+  {% else %}
+    <span>&#129092; </span>
+  {% endif %}
+  &#8194;Halaman {{paginator.page}} dari {{paginator.total_pages}}&#8194;
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/hlm{{paginator.next_page}}"> &#129094;</a>
+  {% else %}
+    <span> &#129094;</span>
+  {% endif %}
+</div>

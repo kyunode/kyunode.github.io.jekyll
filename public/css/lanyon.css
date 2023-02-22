@@ -332,9 +332,10 @@ a.sidebar-nav-item:focus {
 
 /* Meta data line below post title */
 .post-date {
+  font-size: 87%;
   display: block;
   margin-top: -.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: #9a9a9a;
 }
 
@@ -375,7 +376,7 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Hanken Grotesk", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
