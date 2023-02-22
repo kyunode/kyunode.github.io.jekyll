@@ -17,6 +17,10 @@ title: Beranda
       &middot; {{ post.author }}
     {% endif %}
 
+    <br>
+
+    &#177;{{ post.content | number_of_words | divided_by: 195.0 | round }} menit waktu baca
+
     </span>
 
     <h1 class="post-title">
@@ -33,7 +37,7 @@ title: Beranda
 
   </div>
   {% endfor %}
-</div>
+</div>{{ post.content | strip_html | truncatewords: 25 }}
 
 <!--
 <div class="pagination">
