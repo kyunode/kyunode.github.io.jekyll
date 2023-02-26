@@ -332,7 +332,8 @@ a.sidebar-nav-item:focus {
 
 /* Meta data line below post title */
 .post-date {
-  font-size: 87%;
+  font-family: "Cascadia Code", monospace;
+  font-size: 80%;
   display: block;
   margin-top: -.5rem;
   margin-bottom: 0;
