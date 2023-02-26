@@ -1,13 +1,14 @@
 ---
 title: "Dokumentasi proses pemasangan Arch Linux"
 author: Qauland
+image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
 last_modified_at: 2023-02-26
 ---
 
-Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah berikut. Pos ini ditulis untuk tujuan dokumentasi saja. Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [wiki.archlinux.org/title/Installation_guide](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [itsfoss.com/install-arch-linux/](<https://itsfoss.com/install-arch-linux/>).
+Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
 
-**Penting: Selalu gunakan `-S` atau `-Syu` saat memasang aplikasi menggunakan `pacman`. JANGAN pakai `-Sy` karena berisiko besar merusak sistem operasi.**
+Penting: **Selalu gunakan `-S` atau `-Syu` saat memasang aplikasi menggunakan `pacman`. JANGAN gunakan `-Sy` karena berisiko besar merusak sistem operasi.**
 
 ## Mulai
 
@@ -38,7 +39,7 @@ ping google.com
 
 Selesaikan pakai Ctrl+C.
 
-Gunakan peladen paket dengan jaringan tercepat:
+Gunakan peladen paket aplikasi dengan jaringan tercepat:
 
 ```
 reflector --country 'Australia,Indonesia,' --sort rate --save /etc/pacman.d/mirrorlist
@@ -84,14 +85,14 @@ Masuk ke instalasi Arch Linux:
 arch-chroot /mnt
 ```
 
-Buat berkas terkait zona waktu (diasumsikan Asia/Makassar):
+Buat berkas terkait zona waktu (diasumsikan [Asia/Makassar](https://timezonedb.com/time-zones/Asia/Makassar)):
 
 ```
 ln -sf /usr/share/zoneinfo/Asia/Makassar /etc/localtime
 hwclock --systohc
 ```
 
-Buat dan ganti berkas terkait *locale*. Saya pakai *locale* `en_GB`.
+Buat dan ganti berkas terkait *locale*. Saya pakai *locale* `en_GB`:
 
 ```
 nano /etc/locale.gen # Uncomment en_GB.UTF-8 UTF-8 dan/atau locale lain yang dibutuhkan
@@ -152,18 +153,18 @@ Penjelasan:
 
 - `xfce4 xfce4-goodies gtk-engines gtk-engine-murrine gnome-themes-standard`
 
-  *Desktop environment* XFCE dan dependensinya.
+  *Desktop environment* [XFCE](https://www.xfce.org/) dan dependensinya.
 
 - `lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings`
 
-  LightDM, tema LightDM GTK, dan pengaturan versi GUI.
+  *Display manager* LightDM ([Wikipedia](https://en.wikipedia.org/wiki/LightDM)), tema *greeter* GTK, dan pengaturan *greeter* versi GUI.
 
 - `gvfs gvfs-mtp gvfs-gphoto2 gvfs-afc`
 
   Diska dan partisi di pengelola berkas:
   - `gvfs-mtp` untuk hape,
   - `gvfs-gphoto2` untuk kamera, dan
-  - `gvfs-afc` untuk perangkat Apple
+  - `gvfs-afc` untuk perangkat Apple.
 
 - `networkmanager network-manager-applet nm-connection-editor`
 
@@ -171,7 +172,7 @@ Penjelasan:
 
 - `pulseaudio pavucontrol ffmpeg gst-libav`
 
-  Suara (melalui Pulseaudio) dan *mixer*.
+  Sistem peladen dan manajemen suara, serta *mixer*.
 
 - `xdg-user-dirs`
 
@@ -183,11 +184,11 @@ Penjelasan:
 
 - `gnu-free-fonts`
 
-  Fon GNU.
+  Fon GNU ([situs resmi](https://www.gnu.org/software/freefont/), [Wikipedia](https://en.wikipedia.org/wiki/GNU_FreeFont)).
 
 - `noto-fonts`
 
-  Fon Noto.
+  Fon [Noto](https://fonts.google.com/noto).
 
 - `noto-fonts-cjk`
 
@@ -225,8 +226,6 @@ reboot
 ```
 
 ## Selamat datang di Arch Linux!
-
-![](https://i.postimg.cc/5yvrZP0w/Screenshot-2023-02-25-16-27-26.jpg)
 
 ### Konfigurasi setelah pemasangan
 
@@ -318,21 +317,21 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 - Untuk menyetel *wallpaper*, salin gambar ke `~/Pictures` lalu *Set as wallpaper*.
 
-  Untuk menyetel *wallpaper* LightDM, salin gambar ke `/usr/share/wallpapers`, kemudian ubah via LightDM GTK+ Greeter Settings.
+  Untuk menyetel *wallpaper greeter* LightDM, salin gambar ke `/usr/share/wallpapers`, kemudian ubah via *LightDM GTK+ Greeter Settings*.
 
 - Fon standar: [IBM Plex Text](https://github.com/ibm/plex), fon *monospace*: [Cascadia Code](https://github.com/microsoft/cascadia-code).
 
-  Salin berkas ke `/usr/local/share/fonts` (atau `/usr/share/fonts` kalau ingin dipakai juga di LightDM). Usahakan pakai berkas `.otf`.
+  Salin berkas ke `/usr/local/share/fonts` (atau `/usr/share/fonts` kalau ingin dipakai juga di *greeter* LightDM). Usahakan pakai berkas `.otf`.
 
   Untuk fon Cascadia, bisa dipasang melalui `pacman`: `otf-cascadia-code`.
 
 - Tema: [Fluent Round](https://www.gnome-look.org/p/1574551/).
 
-  Ekstrak lalu salin berkas ke `/usr/local/share/themes` (atau `/usr/share/themes` kalau ingin dipakai juga di LightDM).
+  Ekstrak lalu salin berkas ke `/usr/local/share/themes` (atau `/usr/share/themes` kalau ingin dipakai juga di *greeter* LightDM).
 
 - Ikon: [Colloid](https://www.gnome-look.org/p/1661983/).
 
-  Ekstrak lalu salin berkas ke `/usr/local/share/icons` (atau `/usr/share/icons` kalau ingin dipakai juga di LightDM).
+  Ekstrak lalu salin berkas ke `/usr/local/share/icons` (atau `/usr/share/icons` kalau ingin dipakai juga di *greeter* LightDM).
 
 - Kursor: [Bibata Modern Ice](https://www.gnome-look.org/p/1197198/).
 
@@ -341,5 +340,3 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Skema warna terminal: [Base16-Ayu Dark.16](https://github.com/tinted-theming/base16-xfce4-terminal/blob/main/colorschemes/base16-ayu-dark.16.theme).
 
   Salin berkas ke folder `colorschemes` di `~/.local/share/xfce4/terminal/` (buat direktori/folder kalau belum ada).
-
-![](https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg)
