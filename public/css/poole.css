@@ -115,6 +115,12 @@ strong {
 
 
 /* Lists */
+
+ul, ol {
+  padding-inline-start: 1.15em;
+  /* padding-left: 10px; */
+}
+
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
