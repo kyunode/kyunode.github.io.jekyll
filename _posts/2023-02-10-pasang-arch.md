@@ -3,7 +3,7 @@ title: "Dokumentasi proses pemasangan Arch Linux"
 author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
-last_modified_at: 2023-02-26
+last_modified_at: 2023-02-27
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -188,7 +188,7 @@ Penjelasan:
 
 - `noto-fonts`
 
-  Fon [Noto](https://fonts.google.com/noto).
+  Fon [Noto](https://fonts.google.com/noto), yang (katanya) mendukung semua karakter Unicode.
 
 - `noto-fonts-cjk`
 
@@ -204,7 +204,7 @@ Setelah memasang LightDM, buka `lightdm.conf`:
 nano /etc/lightdm/lightdm.conf
 ```
 
-Cari `greeter-session`, lalu sunting menjadi seperti ini:
+Cari `greeter-session`, lalu *uncomment* dan sunting menjadi seperti ini:
 
 ```
 greeter-session=lightdm-gtk-greeter
@@ -217,7 +217,7 @@ systemctl enable lightdm.service
 systemctl enable NetworkManager.service
 ```
 
-Akhir:
+Akhirnya:
 
 ```
 exit
@@ -260,8 +260,6 @@ Kalau Windows tidak muncul setelah `grub-mkconfig`:
 sudo nano /etc/grub.d/40_custom
 ```
 
-Lalu tambahkan entri berikut:
-
 ```
 menuentry 'Windows 10' {
 	insmod ntfs
@@ -281,62 +279,87 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ### Instalasi setelah pemasangan
 
-- `htop` (*task manager* di terminal), `neofetch` (info sistem di terminal), dan `wget` (unduh berkas dari terminal).
+`htop` (*task manager* di terminal), `neofetch` (info sistem di terminal), dan `wget` (unduh berkas dari terminal).
 
-- `rhythmbox` (pemutar musik dan radio internet).
+`rhythmbox` (pemutar musik dan radio internet).
 
-- `vlc` (pemutar video).
+`vlc` (pemutar video).
 
-- `kdeconnect` (hubungkan hape dan komputer hanya bermodalkan *Wi-Fi hotspot* dan tidak menyedot kuota internet).
+`kdeconnect` (hubungkan hape dan komputer hanya bermodalkan *Wi-Fi hotspot* dan tidak menyedot kuota internet).
 
-- `yay` (akses [Arch User Repository (AUR)](https://wiki.archlinux.org/title/Arch_User_Repository)).
+`yay`<sup>AUR</sup> (membantu dalam penggunaan [Arch User Repository (AUR)](https://wiki.archlinux.org/title/Arch_User_Repository)). Untuk memasang `yay`:
 
-  ```
-  pacman -S --needed git base-devel
-  git clone https://aur.archlinux.org/yay-bin.git
-  cd yay-bin
-  makepkg -si
-  ```
+```
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+```
 
-- `caffeine-ng` (tetap biarkan layar menyala, matikan *screensaver*) dapat dipasang menggunakan `yay`.
+`caffeine-ng`<sup>AUR</sup> (tetap biarkan layar menyala, matikan *screensaver*) dapat dipasang menggunakan `yay`.
 
-- Wine (untuk menjalankan aplikasi Windows) dan Steam (iya, Steam yang itu) dapat dipasang setelah mengaktifkan repositori `multilib`. *Uncomment* baris berikut di `/etc/pacman.conf`:
+Wine (untuk menjalankan aplikasi Windows) dan Steam (iya, Steam yang itu) dapat dipasang setelah mengaktifkan repositori `multilib`. *Uncomment* baris berikut di `/etc/pacman.conf`:
 
-  ```
-  [multilib]
-  Include = /etc/pacman.d/mirrorlist
-  ```
+```
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
 
-  Kemudian pasang `steam wine winetricks wine-gecko wine-mono` (`wine-gecko` untuk Internet Explorer, `wine-mono` untuk .NET Framework).
+Kemudian pasang `steam wine winetricks wine-gecko wine-mono` (`wine-gecko` untuk Internet Explorer, `wine-mono` untuk .NET Framework).
   
-  Aktifkan *Steam Play for Linux* di Steam &rarr; Settings &rarr; Steam Play. Pilih versi *Proton Experimental* atau *Proton x.y.z* terbaru.
+- Aktifkan *Steam Play for Linux* di *Steam* &rarr; *Settings* &rarr; *Steam Play*. Pilih versi *Proton Experimental* atau *Proton x.y.z* terbaru.
   
-  Matikan *MIME association* Wine menggunakan `winecfg`.
+- Matikan *MIME association* Wine menggunakan `winecfg`.
 
 ### Kustomisasi pribadi
 
-- Untuk menyetel *wallpaper*, salin gambar ke `~/Pictures` lalu *Set as wallpaper*.
+Untuk menyetel *wallpaper*, salin gambar ke `~/Pictures` lalu *Set as wallpaper*.
 
-  Untuk menyetel *wallpaper greeter* LightDM, salin gambar ke `/usr/share/wallpapers`, kemudian ubah via *LightDM GTK+ Greeter Settings*.
+Untuk menyetel *wallpaper greeter* LightDM, salin gambar ke `/usr/share/wallpapers`, kemudian ubah via LightDM GTK+ Greeter Settings.
 
-- Fon standar: [IBM Plex Text](https://github.com/ibm/plex), fon *monospace*: [Cascadia Code](https://github.com/microsoft/cascadia-code).
+Fon standar: [IBM Plex Text](https://github.com/ibm/plex), fon *monospace*: [Cascadia Code](https://github.com/microsoft/cascadia-code). Ini fon-fon yang digunakan di situs ini.
 
-  Salin berkas ke `/usr/local/share/fonts` (atau `/usr/share/fonts` kalau ingin dipakai juga di *greeter* LightDM). Usahakan pakai berkas `.otf`.
+- Salin berkas ke `/usr/local/share/fonts` (atau `/usr/share/fonts` kalau ingin dipakai juga di *greeter* LightDM). Usahakan pakai berkas `.otf`.
 
-  Untuk fon Cascadia, bisa dipasang melalui `pacman`: `otf-cascadia-code`.
+- Untuk fon Cascadia, bisa dipasang melalui `pacman`: `otf-cascadia-code`.
 
-- Tema: [Fluent Round](https://www.gnome-look.org/p/1574551/).
+Skema warna terminal: [Base16-Ayu Dark.16](https://github.com/tinted-theming/base16-xfce4-terminal/blob/main/colorschemes/base16-ayu-dark.16.theme).
 
-  Ekstrak lalu salin berkas ke `/usr/local/share/themes` (atau `/usr/share/themes` kalau ingin dipakai juga di *greeter* LightDM).
+- Salin berkas ke folder `colorschemes` di `~/.local/share/xfce4/terminal/` (buat direktori/folder kalau belum ada).
 
-- Ikon: [Colloid](https://www.gnome-look.org/p/1661983/).
+Ikon: [Colloid](https://www.gnome-look.org/p/1661983/). Kursor: [Bibata Modern Ice](https://www.gnome-look.org/p/1197198/).
 
-  Ekstrak lalu salin berkas ke `/usr/local/share/icons` (atau `/usr/share/icons` kalau ingin dipakai juga di *greeter* LightDM).
+- Ekstrak lalu salin berkas ke `/usr/local/share/icons` (atau `/usr/share/icons` kalau ingin dipakai juga di *greeter* LightDM).
 
-- Kursor: [Bibata Modern Ice](https://www.gnome-look.org/p/1197198/).
+Tema: [Fluent Round](https://www.gnome-look.org/p/1574551/).
 
-  Ekstrak lalu salin berkas ke `/usr/local/share/icons` (atau `/usr/share/icons` kalau ingin dipakai juga di LightDM).
+- Ekstrak lalu salin berkas ke `/usr/local/share/themes` (atau `/usr/share/themes` kalau ingin dipakai juga di *greeter* LightDM).
 
-- Skema warna terminal: [Base16-Ayu Dark.16](https://github.com/tinted-theming/base16-xfce4-terminal/blob/main/colorschemes/base16-ayu-dark.16.theme).
+Untuk membuat tema konsisten di beberapa aplikasi Qt (misalnya KDE Connect):
 
-  Salin berkas ke folder `colorschemes` di `~/.local/share/xfce4/terminal/` (buat direktori/folder kalau belum ada).
+- Pasang `kvantum` dan `qt5ct`.
+
+- Unduh dan ekstrak [Fluent Kvantum](https://pling.com/p/1499836/).
+
+- Buka/buat `~/.profile`, lalu ketik:
+
+  ```
+  export QT_QPA_PLATFORMTHEME=qt5ct
+  # export QT_STYLE_OVERRRIDE=kvantum
+  ```
+
+  Setelah itu, log keluar lalu log masuk kembali.
+
+- Buka Kvantum Manager. Di *Install/Update Theme*, pilih folder Fluent Kvantum yang sudah diekstrak tadi, kemudian terapkan di *Change/Delete Theme*.
+
+  - Kalau tidak suka *window* yang transparan, nonaktifkan *Translucent windows* di *Configure Active Theme* &rarr; *Compositing & General Look*.
+
+- Buka Qt5 Settings, kemudian ganti *Style* ke `kvantum` atau `kvantum-dark`.
+  
+  - Ganti fon dan ikon di tab *Fonts* dan *Icon Theme*.
+
+- Untuk pengguna tema gelap, jika masih ada aplikasi yang menggunakan tema terang, buka/buat `~/.config/kdeglobals`, lalu ketik:
+
+<script src="https://gist.github.com/kyunode/65b88f3d39345da7de1719ed05226b54.js"></script>
+
+> Semua parameter di atas disalin dari repositori GitHub [totte/configurations](https://github.com/totte/configurations/blob/master/.kde4/share/config/kdeglobals.example).
