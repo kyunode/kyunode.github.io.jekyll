@@ -1,8 +1,8 @@
 ---
-title: "SelagiTayang Tumpat: Pokémon Horizons (serta progres Pokémon Platinum)"
+title: "SelagiTayang: Pokémon Horizons (serta progres Pokémon Platinum)"
 author: Qauland
 image: https://i.postimg.cc/rFM8p83R/202304-hrz.png
-description: "Tulisan versi tumpat untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023, serta jurnal tumpat progres permainan saya di Pokémon Platinum."
+description: "Tulisan untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023, serta jurnal tumpat progres permainan saya di Pokémon Platinum."
 last_modified_at: 2023-04-16
 ---
 
