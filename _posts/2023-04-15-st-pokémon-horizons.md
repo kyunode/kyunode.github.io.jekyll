@@ -3,7 +3,7 @@ title: "SelagiTayang: Pokémon Horizons (serta progres Pokémon Platinum)"
 author: Qauland
 image: https://qauland.s-ul.eu/stt/x9StlrcF.png
 description: "Tulisan untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023, serta jurnal tumpat progres permainan saya di Pokémon Platinum."
-last_modified_at: 2023-04-16
+last_modified_at: 2023-04-24
 ---
 
 > Sumber gambar sampul: [Twitter/@anipoke_PR](https://twitter.com/anipoke_PR/status/1631603069950517253)
@@ -24,6 +24,24 @@ Pachirisu tidak/belum muncul. Eeeh.
 
 Bayangan saya, suaranya Rotom di Ultra Moon itu seperti suara elektronik anak kecil (saya hampir selalu *mute game* kalau bermain), jadi kayak aneh begitu mendengar Rotom di sini kayak sudah tua. (Tambahan 16/4)
 
-#### Progres Platinum, 16 April 2023
+#### Progres Platinum, 16 April
 
 Masih *stuck* di Veilstone City. Rencananya kasih naik semua dulu sampai level 35+ sebelum serang *gym*.
+
+## 03
+
+Kali ini baik nama Pokémon dan *moves*-nya ngikut Jepang. Makin bingung, dah.
+
+Gede Pokémon Center-nya. Baru Center di Paldea kek SPBU.
+
+Astaga, Amethio, masa' ndak bisa kamu antisipasi strategi "ngulur waktu buat bebasin tahanan".... Jadi *villain* yang cerdas dikit, lah.
+
+Ooh, ke Paldea. Mau ketemu Iono. Ehem, karena akun Twitter resmi Pokémon mengindikasikan kalau Area Zero bakalan ada di anime, jadi cuma bisa berharap semoga AI Sada/Turo bakalan ada juga.
+
+Pachirisu tidak/belum muncul.
+
+#### Progres Platinum, 24 April
+
+![](/images/outside_veilstone_512.png)
+
+<p align="center">Apa itu <i>gym</i>? Mending jadi petani <i>berry</i>.</p>
