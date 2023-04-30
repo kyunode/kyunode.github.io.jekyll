@@ -24,7 +24,7 @@ Pachirisu tidak/belum muncul. Eeeh.
 
 Bayangan saya, suaranya Rotom di Ultra Moon itu seperti suara elektronik anak kecil (saya hampir selalu *mute game* kalau bermain), jadi kayak aneh begitu mendengar Rotom di sini kayak sudah tua. (Tambahan 16/4)
 
-#### Platinum, 16 April
+### Platinum, 16 April
 
 Masih *stuck* di Veilstone City. Rencananya kasih naik semua dulu sampai level 35+ sebelum serang *gym*.
 
@@ -40,7 +40,7 @@ Ooh, ke Paldea. Mau ketemu Iono. Ehem, karena akun Twitter resmi Pokémon mengin
 
 Pachirisu tidak/belum muncul.
 
-#### Platinum, 24 April
+### Platinum, 24 April
 
 ![](/images/outside_veilstone_512.png)
 
@@ -56,7 +56,7 @@ PJJ dalam hutan, coy. Ndak kaget, di Indonesia sudah ada yang pernah beritakan l
 
 Pachirisu tidak/belum muncul.
 
-#### XY 01-03
+### XY 01-03
 
 *Dub*-nya aneh.
 
@@ -64,6 +64,6 @@ Yang ini sepertinya beda jauh dengan versi gim. Kalau misalnya Lumiose sampai ke
 
 Pilih Fennekin, Serena!
 
-#### Diamond Pearl 001
+### Diamond Pearl 001
 
 191 episode. Lalu bisa namatin Ueki, semoga yang ini bisa juga. *Kyuuuu*.
