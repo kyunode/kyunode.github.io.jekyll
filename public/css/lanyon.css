@@ -41,21 +41,29 @@ body {
 }
 
 html {
-  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
- }
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  font-weight: 480;
+  font-stretch: 87.5%;
+}
+
+/*
+body {
+  background-color: #090909;
+}
+*/
 
 h1 {
-  font-family: "Source Serif 4", Cambria, serif;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  color: #313131;
-  letter-spacing: -.025rem;
+  font-stretch: 75%;
+  color: #151515;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif; /* prev Aleo */
-  font-weight: 500;
-  color: #313131;
-  letter-spacing: -.025rem;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif; /* prev Aleo */
+  font-stretch: 87.5%;
+  font-weight: 650;
+  color: #151515;
 }
 
 
@@ -155,8 +163,9 @@ h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
+  font-stretch: 95%;
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
@@ -323,7 +332,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #151515;
 }
 .page-title,
 .post-title {
@@ -337,7 +346,7 @@ a.sidebar-nav-item:focus {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 0;
-  color: #9a9a9a;
+  color: #7a7a7a;
 }
 
 /* Related posts */
@@ -377,7 +386,7 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
