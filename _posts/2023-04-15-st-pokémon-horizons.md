@@ -3,7 +3,7 @@ title: "SelagiTayang: Pokémon Horizons (+ XY, Diamond Pearl, dan Platinum)"
 author: Qauland
 image: https://qauland.s-ul.eu/stt/x9StlrcF.png
 description: "Tulisan untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023. Plus, seri Pokémon XY, seri Pokémon Diamond Pearl, dan gim Pokémon Platinum."
-last_modified_at: 2023-04-30
+last_modified_at: 2023-05-09
 ---
 
 > Sumber gambar sampul: [Twitter/@anipoke_PR](https://twitter.com/anipoke_PR/status/1631603069950517253)
@@ -58,7 +58,7 @@ Pachirisu tidak/belum muncul.
 
 ### XY 01-03
 
-*Dub*-nya aneh.
+Kurang *sreg* dengan *dub*-nya.
 
 Yang ini sepertinya beda jauh dengan versi gim. Kalau misalnya Lumiose sampai kena pemadaman gara-gara serangan Garchomp sih saya senang. Tapi kalau mau dipikir lagi ya kurang masuk akal, sih, masa' satu kota bisa padam total cuma karena satu Pokémon yang bahkan ndak nyerang PLN.
 
@@ -67,3 +67,17 @@ Pilih Fennekin, Serena!
 ### Diamond Pearl 001
 
 191 episode. Lalu bisa namatin Ueki, semoga yang ini bisa juga. *Kyuuuu*.
+
+## Horizons 05
+
+Oh, harus sama perasaannya, 'kah? Saya kira tinggal lempar Poké Ball selesai.
+
+Jadi tiap jenis Poké Ball itu interiornya beda-beda. Saya pake Poké Ball reguler terus, jarang sekali pake jenis yang lain. Eh, selama bisa menghemat duit ya saya pake itu terus.
+
+Pachirisu tidak/belum muncul.
+
+![](/images/psyduck.jpg)
+
+<p align="center">Psyduck lumayan gede juga.</p>
+
+Katanya Paldea di episode 8, Nemona di episode 9. *Can't wait!*
