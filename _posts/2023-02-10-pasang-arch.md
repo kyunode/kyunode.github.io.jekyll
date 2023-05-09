@@ -3,7 +3,7 @@ title: "Dokumentasi proses pemasangan Arch Linux"
 author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
-last_modified_at: 2023-02-27
+last_modified_at: 2023-05-09
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -44,6 +44,8 @@ Gunakan peladen paket aplikasi dengan jaringan tercepat:
 ```
 reflector --country 'Australia,Indonesia,' --sort rate --save /etc/pacman.d/mirrorlist
 ```
+
+Tambahkan `--download-timeout 60` kalau sering *time out*. 
 
 Cek tanggal:
 
@@ -281,9 +283,11 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 `htop` (*task manager* di terminal), `neofetch` (info sistem di terminal), dan `wget` (unduh berkas dari terminal).
 
-`rhythmbox` (pemutar musik dan radio internet).
+`xarchiver` atau `file-roller` (pengarsip/pembuka arsip) dan dependensinya: `zip unzip unrar p7zip`.
 
-`vlc` (pemutar video).
+`rhythmbox` (pemutar musik dan radio internet) serta `vlc` (pemutar video).
+
+`gimp` dan/atau `inkscape` (penyunting gambar).
 
 `kdeconnect` (hubungkan hape dan komputer hanya bermodalkan *Wi-Fi hotspot* dan tidak menyedot kuota internet).
 
@@ -317,7 +321,7 @@ Untuk menyetel *wallpaper*, salin gambar ke `~/Pictures` lalu *Set as wallpaper*
 
 Untuk menyetel *wallpaper greeter* LightDM, salin gambar ke `/usr/share/wallpapers`, kemudian ubah via LightDM GTK+ Greeter Settings.
 
-Fon standar: [IBM Plex Text](https://github.com/ibm/plex), fon *monospace*: [Cascadia Code](https://github.com/microsoft/cascadia-code). Ini fon-fon yang digunakan di situs ini.
+Fon standar: [IBM Plex Text](https://github.com/ibm/plex) atau [Comme](https://github.com/googlefonts/comme). Fon *monospace*: [Cascadia Code](https://github.com/microsoft/cascadia-code).
 
 - Salin berkas ke `/usr/local/share/fonts` (atau `/usr/share/fonts` kalau ingin dipakai juga di *greeter* LightDM). Usahakan pakai berkas `.otf`.
 
