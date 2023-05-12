@@ -1,10 +1,16 @@
-/* Nunito Sans */
+/* Radio Canada */
 
 @font-face {
-  font-family: "Nunito Sans";
+  font-family: "Radio Canada";
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/NunitoSans/NunitoSans.ttf') format('truetype');
+  src: url('/fonts/RadioCanada/RadioCanada-2.104.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Radio Canada";
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/RadioCanada/RadioCanada-Italic-2.104.woff2') format('woff2');
 }
 
 /* Cascadia Code */
