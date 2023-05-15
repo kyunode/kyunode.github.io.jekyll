@@ -3,12 +3,12 @@ title: "SelagiTayang: Pokémon Horizons (+ XY, Diamond Pearl, dan Platinum)"
 author: Qauland
 image: https://qauland.s-ul.eu/stt/x9StlrcF.png
 description: "Tulisan untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023. Plus, seri Pokémon XY, seri Pokémon Diamond Pearl, dan gim Pokémon Platinum."
-last_modified_at: 2023-05-09
+last_modified_at: 2023-05-15
 ---
 
 > Sumber gambar sampul: [Twitter/@anipoke_PR](https://twitter.com/anipoke_PR/status/1631603069950517253)
 
-## Horizons 01-02
+## Horizons 001--002
 
 Agak membingungkan karena translasi yang saya pake ngikut Jepang untuk nama Pokémon-nya tapi ngikut Inggris untuk nama *moves*-nya, sementara saya sudah terbiasa pake Inggris untuk keduanya. (Sunting 16/4)
 
@@ -28,7 +28,7 @@ Bayangan saya, suaranya Rotom di Ultra Moon itu seperti suara elektronik anak ke
 
 Masih *stuck* di Veilstone City. Rencananya kasih naik semua dulu sampai level 35+ sebelum serang *gym*.
 
-## Horizons 03
+## Horizons 003
 
 Kali ini baik nama Pokémon dan *moves*-nya ngikut Jepang. Makin bingung, dah.
 
@@ -46,7 +46,7 @@ Pachirisu tidak/belum muncul.
 
 <p align="center">Apa itu <i>gym</i>? Mending jadi petani <i>berry</i>.</p>
 
-## Horizons 04
+## Horizons 004
 
 Alasan kenapa saya nonton seri ini ada di episode ini (dan seterusnya, mungkin? Semoga?).
 
@@ -56,7 +56,7 @@ PJJ dalam hutan, coy. Ndak kaget, di Indonesia sudah ada yang pernah beritakan l
 
 Pachirisu tidak/belum muncul.
 
-### XY 01-03
+### XY 01--03
 
 Kurang *sreg* dengan *dub*-nya.
 
@@ -68,7 +68,7 @@ Pilih Fennekin, Serena!
 
 191 episode. Lalu bisa namatin Ueki, semoga yang ini bisa juga. *Kyuuuu*.
 
-## Horizons 05
+## Horizons 005
 
 Oh, harus sama perasaannya, 'kah? Saya kira tinggal lempar Poké Ball selesai.
 
@@ -81,3 +81,11 @@ Pachirisu tidak/belum muncul.
 <p align="center">Psyduck lumayan gede juga.</p>
 
 Katanya Paldea di episode 8, Nemona di episode 9. *Can't wait!*
+
+## Horizons 006
+
+Episode yang agak lemah.
+
+Halo penerjemah, teman dan rekan itu bersinonim, loh. Tapi ya mungkin di versi Jepangnya juga pake kata yang bersinonim juga.
+
+Pachirisu tidak/belum muncul.
