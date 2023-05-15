@@ -21,6 +21,32 @@
         </div>
       </div>
 
+	<div id="topbar" class="masthead">
+          <div class="container">
+            <h3 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Beranda">{{ site.title }}</a>
+              <small>{{ site.tagline }}</small>
+            </h3>
+          </div>
+        </div>
+
+	<script> // Adapted from W3Schools
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	if (window.innerWidth < 500) {
+	  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	    document.getElementById("topbar").style.top = "0";
+	  }
+	  else {
+	    document.getElementById("topbar").style.top = "-100px";
+	  }
+	}
+	else {
+	    document.getElementById("topbar").style.top = "-100px";
+	}
+	}
+	</script>
+
       <div class="container content">
         {{ content }}
 	<div style="font-size:.87rem;color:#7a7a7a;margin-bottom:30px;">
