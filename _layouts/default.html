@@ -5,7 +5,9 @@
 
   <body class="layout-reverse">
 
+    {% comment %}{% raw %}
     {% include sidebar.html %}
+    {% endraw %}{% endcomment %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -21,9 +23,35 @@
 
       <div class="container content">
         {{ content }}
+	<div style="font-size:.87rem;color:#7a7a7a;margin-bottom:30px;">
+	  <hr/>
+	<!--
+	  <p>{{ site.title }}: {{ site.description }}
+	  <br/>
+	-->
+	  Diberdayakan oleh GitHub Pages sejak 2019. <!-- —{{ site.time | date: '%Y' }}. -->
+	  <br/>
+	  <a href="https://github.com/kyunode/kyunode.github.io">
+	      <img src="{{ site.baseurl }}/images/github.svg"
+		alt="Logo GitHub"
+		style="vertical-align:text-top;display:inline;width:18px;height:18px;margin:0px 3px 0px 0px">
+	      </img>
+	    Repositori
+	  </a>
+	  &middot;
+	  <a href="https://social.vivaldi.net/@kyunode" rel="me">
+	      <img src="{{ site.baseurl }}/images/mastodon.svg"
+		alt="Logo Mastodon"
+		style="vertical-align:text-top;display:inline;width:18px;height:18px;margin:0px 3px 0px 0px">
+	      </img>
+	    @kyunode
+	  </a>
+	  </p>
+        </div>
       </div>
     </div>
 
+<!--
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script>
@@ -43,5 +71,7 @@
         }, false);
       })(document);
     </script>
+-->
+
   </body>
 </html>

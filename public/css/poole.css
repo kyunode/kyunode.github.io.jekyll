@@ -49,17 +49,17 @@ body {
 
 html {
   font-family: "Radio Canada", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
 }
-@media (min-width: 38em) {
+@media (max-width: 480px) { /* previous value: 38em */
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 body {
-  color: #313131;
+  color: #cecece;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #26d28a;
   text-decoration: none;
 }
 a strong {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: #eaeaea;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -109,9 +109,11 @@ p {
   margin-bottom: 1rem;
 }
 
+/*
 strong {
   color: #303030;
 }
+*/
 
 
 /* Lists */
@@ -138,8 +140,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #191919;
 }
 
 abbr {
@@ -161,8 +163,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
+  color: #ed68ce; /* #bf616a */
+  background-color: #151515; /* #f9f9f9 */
   border-radius: 3px;
 }
 pre {
@@ -177,7 +179,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word; */
   overflow-x: auto;
-  background-color: #f9f9f9;
+  background-color: #151515;
 }
 pre code {
   padding: 0;
@@ -223,8 +225,8 @@ blockquote {
   font-style: italic;
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #757575;
-  border-left: .2rem solid #c1c1c1;
+  color: #7a7a7a;
+  border-left: .2rem solid #7a7a7a;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -248,21 +250,21 @@ table {
   display: block;
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #1a1a1a;
   border-collapse: collapse;
   overflow-x: auto;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #1a1a1a;
 }
 /* th {
   font-family: Aleo, serif;
 } */
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #0f0f0f;
 }
 
 
