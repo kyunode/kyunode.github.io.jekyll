@@ -3,7 +3,7 @@ title: "SelagiTayang: Pokémon Horizons (+ XY, Diamond Pearl, dan Platinum)"
 author: Qauland
 image: https://qauland.s-ul.eu/stt/x9StlrcF.png
 description: "Tulisan untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023. Plus, seri Pokémon XY, seri Pokémon Diamond Pearl, dan gim Pokémon Platinum."
-last_modified_at: 2023-05-15
+last_modified_at: 2023-05-25
 ---
 
 > Sumber gambar sampul: [Twitter/@anipoke_PR](https://twitter.com/anipoke_PR/status/1631603069950517253)
@@ -87,5 +87,15 @@ Katanya Paldea di episode 8, Nemona di episode 9. *Can't wait!*
 Episode yang agak lemah.
 
 Halo penerjemah, teman dan rekan itu bersinonim, loh. Tapi ya mungkin di versi Jepangnya juga pake kata yang bersinonim juga.
+
+Pachirisu tidak/belum muncul.
+
+## Horizons 007
+
+Yang dipake itu Rotom-PC, 'kan? Jadi, bagaimana dengan speknya, apakah semua Rotom-PC punya spek yang sama atau beda-beda? Apa Shiny Rotom punya spek yang lebih tinggi?
+
+Antarmukanya mirip Windows (atau sistem operasi yang pake sistem desain Fluent)... apakah Windows *canon* di sini?
+
+Seandainya *battle* di gim juga bisa berakhir seri.
 
 Pachirisu tidak/belum muncul.
