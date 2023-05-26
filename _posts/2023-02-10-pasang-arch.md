@@ -3,7 +3,7 @@ title: "Dokumentasi proses pemasangan Arch Linux"
 author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
-last_modified_at: 2023-05-09
+last_modified_at: 2023-05-27
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -74,6 +74,8 @@ Pasang Arch Linux dan `nano`:
 pacstrap -K /mnt base linux linux-firmware nano
 ```
 
+> Ada *bug* langka di mana ada beberapa paket yang tidak dapat terpasang karena *invalid key*. Ulangi instalasi dan ganti negara di `reflector` menjadi `'Australia,'`.
+
 Buat berkas `fstab`:
 
 ```
@@ -103,10 +105,10 @@ echo LANG=en_GB.UTF-8 > /etc/locale.conf
 export LANG=en_GB.UTF-8
 ```
 
-Buat *hostname* (diasumsikan `qauland-arch`):
+Buat *hostname* (diasumsikan `qd-arch`):
 
 ```
-echo qauland-arch > /etc/hostname
+echo qd-arch > /etc/hostname
 touch /etc/hosts
 nano /etc/hosts
 ```
@@ -116,7 +118,7 @@ Tambah kode berikut ke `/etc/hosts`:
 ```
 127.0.0.1  localhost
 ::1        localhost
-127.0.1.1  qauland-arch
+127.0.1.1  qd-arch
 ```
 
 Buat kata sandi untuk *root*:
@@ -143,19 +145,23 @@ usermod -aG wheel,audio,video,storage qauland
 EDITOR=nano visudo
 ```
 
-*Uncomment* `%wheel ALL=(ALL:ALL) ALL` pada bagian "*Uncomment to allow members of group wheel...*"
+*Uncomment* `%wheel ALL=(ALL:ALL) ALL` pada bagian "*Uncomment to allow members of group wheel to execute any command*."
 
 Pasang berbagai paket aplikasi:
 
 ```
-pacman -Syu xfce4 xfce4-goodies gtk-engines gtk-engine-murrine gnome-themes-standard lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings gvfs gvfs-mtp gvfs-gphoto2 gvfs-afc networkmanager network-manager-applet nm-connection-editor pulseaudio pavucontrol ffmpeg gst-libav xdg-user-dirs man-db man-pages gnu-free-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji
+pacman -Syu ...
 ```
 
-Penjelasan:
+Ganti elipsis dengan kumpulan paket di bawah sesuka Anda:
 
 - `xfce4 xfce4-goodies gtk-engines gtk-engine-murrine gnome-themes-standard`
 
   *Desktop environment* [XFCE](https://www.xfce.org/) dan dependensinya.
+
+- `budgie arc-gtk-theme papirus-icon-theme`
+
+  *Desktop environment* [Budgie](https://docs.buddiesofbudgie.org/) dan dependensinya.
 
 - `lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings`
 
