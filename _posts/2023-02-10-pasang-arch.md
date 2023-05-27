@@ -159,9 +159,9 @@ Ganti elipsis dengan kumpulan paket di bawah sesuka Anda:
 
   *Desktop environment* [XFCE](https://www.xfce.org/) dan dependensinya.
 
-- `budgie arc-gtk-theme papirus-icon-theme`
+- `budgie arc-gtk-theme papirus-icon-theme gnome-terminal`
 
-  *Desktop environment* [Budgie](https://docs.buddiesofbudgie.org/) dan dependensinya.
+  *Desktop environment* [Budgie](https://docs.buddiesofbudgie.org/) dan "dependensinya".
 
 - `lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings`
 
@@ -291,6 +291,10 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 `xarchiver` atau `file-roller` (pengarsip/pembuka arsip) dan dependensinya: `zip unzip unrar p7zip`.
 
+`viewnior` (penampil gambar).
+
+`gedit` (penyunting teks) dan *plugin*-nya: `gedit-plugins libgit2-glib`.
+
 `rhythmbox` (pemutar musik dan radio internet) serta `vlc` (pemutar video).
 
 `gimp` dan/atau `inkscape` (penyunting gambar).
@@ -323,6 +327,10 @@ Kemudian pasang `steam wine winetricks wine-gecko wine-mono` (`wine-gecko` untuk
 
 ### Kustomisasi pribadi
 
+Skema warna: [Catppuccin](https://github.com/catppuccin/catppuccin).
+
+Untuk membuat `pacman` berwarna, *uncomment* baris `#Color` di `/etc/pacman.conf`.
+
 Untuk menyetel *wallpaper*, salin gambar ke `~/Pictures` lalu *Set as wallpaper*.
 
 Untuk menyetel *wallpaper greeter* LightDM, salin gambar ke `/usr/share/wallpapers`, kemudian ubah via LightDM GTK+ Greeter Settings.
@@ -335,7 +343,7 @@ Fon standar: [IBM Plex Text](https://github.com/ibm/plex) atau [Comme](https://g
 
 Skema warna terminal: [Base16-Ayu Dark.16](https://github.com/tinted-theming/base16-xfce4-terminal/blob/main/colorschemes/base16-ayu-dark.16.theme).
 
-- Salin berkas ke folder `colorschemes` di `~/.local/share/xfce4/terminal/` (buat direktori/folder kalau belum ada).
+- Jika menggunakan XFCE Terminal, salin berkas ke folder `colorschemes` di `~/.local/share/xfce4/terminal/` (buat direktori/folder kalau belum ada).
 
 Ikon: [Colloid](https://www.gnome-look.org/p/1661983/). Kursor: [Bibata Modern Ice](https://www.gnome-look.org/p/1197198/).
 
@@ -368,8 +376,4 @@ Untuk membuat tema konsisten di beberapa aplikasi Qt (misalnya KDE Connect):
   
   - Ganti fon dan ikon di tab *Fonts* dan *Icon Theme*.
 
-- Untuk pengguna tema gelap, jika masih ada aplikasi yang menggunakan tema terang, buka/buat `~/.config/kdeglobals`, lalu ketik:
-
-<script src="https://gist.github.com/kyunode/65b88f3d39345da7de1719ed05226b54.js"></script>
-
-> Semua parameter di atas disalin dari repositori GitHub [totte/configurations](https://github.com/totte/configurations/blob/master/.kde4/share/config/kdeglobals.example).
+- Untuk pengguna tema gelap, jika masih ada aplikasi yang menggunakan tema terang, buka/buat `~/.config/kdeglobals`, lalu ketik [konten dalam GitHub Gist ini](https://gist.github.com/kyunode/65b88f3d39345da7de1719ed05226b54).
