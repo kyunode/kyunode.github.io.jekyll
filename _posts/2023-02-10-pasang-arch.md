@@ -3,7 +3,7 @@ title: "Dokumentasi proses pemasangan Arch Linux"
 author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
-last_modified_at: 2023-05-27
+last_modified_at: 2023-05-28
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -47,6 +47,8 @@ reflector --country 'Australia,Indonesia,' --sort rate --save /etc/pacman.d/mirr
 
 Tambahkan `--download-timeout 60` kalau sering *time out*. 
 
+> Jika ingin menambahkan negara Indonesia, silakan ganti bagian `--country` jadi `'Australia,Indonesia,'`, namun mohon perhatikan bahwa ada *bug* langka di mana ada beberapa paket dari peladen Indonesia yang tidak dapat terpasang karena *invalid key*.
+
 Cek tanggal:
 
 ```
@@ -73,8 +75,6 @@ Pasang Arch Linux dan `nano`:
 ```
 pacstrap -K /mnt base linux linux-firmware nano
 ```
-
-> Ada *bug* langka di mana ada beberapa paket yang tidak dapat terpasang karena *invalid key*. Ulangi instalasi dan ganti negara di `reflector` menjadi `'Australia,'`.
 
 Buat berkas `fstab`:
 
@@ -327,7 +327,15 @@ Kemudian pasang `steam wine winetricks wine-gecko wine-mono` (`wine-gecko` untuk
 
 ### Kustomisasi pribadi
 
-Skema warna: [Catppuccin](https://github.com/catppuccin/catppuccin).
+Skema warna yang digunakan adalah **Gruvbox**, tersedia untuk beberapa piranti lunak berikut:
+
+- Tema GTK [Material](https://github.com/TheGreatMcPain/gruvbox-material-gtk) atau [Graphite](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)
+
+- [Tilix](https://github.com/MichaelThessel/tilix-gruvbox)
+
+- [Lainnya](https://github.com/morhetz/gruvbox-contrib) (skema untuk Gedit/Xed tidak mendukung Markdown)
+
+Untuk mengganti warna folder di ikon Papirus, pasang `papirus-folders-git`<sup>AUR</sup>. Petunjuk penggunaan ada di [repositori GitHub](https://github.com/PapirusDevelopmentTeam/papirus-folders).	
 
 Untuk membuat `pacman` berwarna, *uncomment* baris `#Color` di `/etc/pacman.conf`.
 
