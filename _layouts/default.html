@@ -49,7 +49,7 @@
 
       <div class="container content">
         {{ content }}
-	<div style="font-size:.87rem;color:var(--ctp-mocha-subtext0);margin-bottom:30px;">
+	<div class="disclaimer">
 	  <hr/>
 	<!--
 	  <p>{{ site.title }}: {{ site.description }}
@@ -58,17 +58,15 @@
 	  Diberdayakan oleh GitHub Pages sejak 2019. <!-- —{{ site.time | date: '%Y' }}. -->
 	  <br/>
 	  <a href="https://github.com/kyunode/kyunode.github.io">
-	      <img src="{{ site.baseurl }}/images/github.svg"
-		alt="Logo GitHub"
-		style="vertical-align:text-top;display:inline;width:18px;height:18px;margin:0px 3px 0px 0px">
+	      <img class="disc-icon" src="{{ site.baseurl }}/images/github.svg"
+		alt="Logo GitHub">
 	      </img>
 	    Repositori
 	  </a>
 	  &middot;
 	  <a href="https://social.vivaldi.net/@kyunode" rel="me">
-	      <img src="{{ site.baseurl }}/images/mastodon.svg"
-		alt="Logo Mastodon"
-		style="vertical-align:text-top;display:inline;width:18px;height:18px;margin:0px 3px 0px 0px">
+	      <img class="disc-icon" src="{{ site.baseurl }}/images/mastodon.svg"
+		alt="Logo Mastodon">
 	      </img>
 	    @kyunode
 	  </a>
