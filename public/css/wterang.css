@@ -1,0 +1,24 @@
+:root {
+  --pr: var(--emma20);
+  --pr2: var(--emma50);
+  --pro: var(--emma90);
+  --pr-isi: var(--emma70);
+  --pro-isi: var(--emma10);
+  --lb: var(--emmat90);
+  --lb2: var(--emmat95);
+  --lbo: var(--emma10);
+  --garis: var(--emmat80);
+  --sk: var(--kasumi40);
+  --sko: var(--kasumi90);
+  --sk-isi: var(--kasumi70);
+  --sko-isi: var(--kasumi10);
+  --tr: var(--ayumu40);
+  --tro: var(--ayumu90);
+  --tr-svg: invert(32%) sepia(59%) saturate(539%) hue-rotate(300deg) brightness(91%) contrast(97%);
+  --tr-isi: var(--ayumu70);
+  --tro-isi: var(--ayumu10);
+  --galat: var(--setsuna20);
+  --galat-isi: var(--setsuna90);
+  --galato: var(--setsuna70);
+  --galato-isi: var(--setsuna10);
+}
