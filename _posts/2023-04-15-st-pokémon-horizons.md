@@ -3,7 +3,7 @@ title: "SelagiTayang: Pokémon Horizons (+ XY, Diamond Pearl, dan Platinum)"
 author: Qauland
 image: https://qauland.s-ul.eu/stt/x9StlrcF.png
 description: "Tulisan untuk tiap episode seri animasi Pokémon Horizons yang mulai tayang di kuartal kedua 2023. Plus, seri Pokémon XY, seri Pokémon Diamond Pearl, dan gim Pokémon Platinum."
-last_modified_at: 2023-05-25
+last_modified_at: 2023-06-04
 ---
 
 > Sumber gambar sampul: [Twitter/@anipoke_PR](https://twitter.com/anipoke_PR/status/1631603069950517253)
@@ -99,3 +99,21 @@ Antarmukanya mirip Windows (atau sistem operasi yang pake sistem desain Fluent).
 Seandainya *battle* di gim juga bisa berakhir seri.
 
 Pachirisu tidak/belum muncul.
+
+## Horizons 008
+
+Episode yang agak lemah lagi. Cuma fokus di relasi Dot dengan kru kapal. Pachirisu tidak/belum muncul. Hampir tidak ada hal yang *eventful*.
+
+Iya, hampir. Satu-satunya hal *eventful* di episode ini adalah [peringatan gempabumi](https://youtu.be/c44rvgMuwZA).
+
+![](/images/Screenshot_2023-06-04-min.png)
+
+<p align="center">Pojok kiri bawah.</p>
+
+## Horizons 009
+
+"*What, we're f---ing millionaires, right?*" ---RTGame, November 2022
+
+Kalau di gim ndak pernah dikasih lihat bapaknya, di anime ndak pernah dikasih lihat ibunya. Jadi kalau mau lihat keduanya, mainkan gimnya (atau nonton siarannya orang lain main) dan tonton animenya.
+
+Sudah sampai Paldea tapi Pachirisu dan Nemona tidak/belum muncul.
