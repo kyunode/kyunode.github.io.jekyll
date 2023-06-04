@@ -1,20 +1,21 @@
 :root {
-  --pr: var(--emma80);
-  --pr2: var(--emma60);
-  --pro: var(--emma10);
-  --pr-isi: var(--emma30);
-  --pro-isi: var(--emma90);
-  --lb: var(--emma10);
-  --lb2: var(--emma5);
+  --pr: #bfafa1; /* Kasumi */
+  --pr2: #a08873; /* Kasumi */
+  --pro: var(--kasumi10);
+  --pr-isi: #262320; /* Kasumi */
+  --pro-isi: #c9bcb0; /* Kasumi */
+  --lb: #22211e; /* Mia */
+  --lb2: #181715; /* Mia */
   --lbo: var(--emma90);
-  --garis: var(--emma30);
+  --garis: #44423c;
   --sk: var(--kasumi80);
   --sko: var(--kasumi10);
   --sk-isi: var(--kasumi30);
   --sko-isi: var(--kasumi90);
-  --tr: var(--ayumu80);
-  --tro: var(--ayumu10);
-  --tr-svg: invert(86%) sepia(58%) saturate(3663%) hue-rotate(288deg) brightness(100%) contrast(111%);
+  --tr: #81c6ef; /* Shizuku */
+  --tro: #19272f; /* Shizuku */
+    /* Parameter di bawah diambil dari https://codepen.io/sosuke/pen/Pjoqqp */
+  --tr-svg: invert(71%) sepia(59%) saturate(449%) hue-rotate(173deg) brightness(98%) contrast(91%);
   --tr-isi: var(--ayumu30);
   --tro-isi: var(--ayumu90);
   --galat: var(--setsuna80);

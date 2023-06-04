@@ -66,13 +66,13 @@ title: Beranda
     {% else %}
       <a href="{{ site.baseurl }}/hlm{{paginator.previous_page}}">&#9664; </a>
     {% endif %}
-  {% else %}
-    <span>&#9664; </span>
+  <!--else
+    <span>&#9664; </span>-->
   {% endif %}
   &#8194;Halaman {{paginator.page}} dari {{paginator.total_pages}}&#8194;
   {% if paginator.next_page %}
     <a href="{{ site.baseurl }}/hlm{{paginator.next_page}}"> &#9654;</a>
-  {% else %}
-    <span> &#9654;</span>
+  <!--else
+    <span> &#9654;</span>-->
   {% endif %}
 </div>
