@@ -42,7 +42,7 @@ Pachirisu tidak/belum muncul.
 
 ### Platinum, 24 April
 
-![](/images/outside_veilstone_512.png)
+![Karakter utama, Dawn, dari Pokémon Platinum, sedang menyiram tanaman berry. Kotak dialog di bawah berisi teks, "There! All happy!"](/images/outside_veilstone_512.png)
 
 <p align="center">Apa itu <i>gym</i>? Mending jadi petani <i>berry</i>.</p>
 
@@ -76,7 +76,7 @@ Jadi tiap jenis Poké Ball itu interiornya beda-beda. Saya pake Poké Ball regul
 
 Pachirisu tidak/belum muncul.
 
-![](/images/psyduck.jpg)
+![Tangkapan layar Pokémon Horizons di mana Roy memeluk Psyduck.](/images/psyduck.jpg)
 
 <p align="center">Psyduck lumayan gede juga.</p>
 
@@ -106,7 +106,7 @@ Episode yang agak lemah lagi. Cuma fokus di relasi Dot dengan kru kapal. Pachiri
 
 Iya, hampir. Satu-satunya hal *eventful* di episode ini adalah [peringatan gempabumi](https://youtu.be/c44rvgMuwZA).
 
-![](/images/Screenshot_2023-06-04-min.png)
+![Sembilan stasiun TV Jepang menampilkan peringatan gempabumi.](/images/Screenshot_2023-06-04-min.png)
 
 <p align="center">Pojok kiri bawah.</p>
 
