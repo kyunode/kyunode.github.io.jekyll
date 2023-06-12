@@ -36,7 +36,7 @@ body {
 
 ::selection {
   background              : var(--lbo) !important;
-  color                   : var(--pro)    !important;
+  color                   : var(--pro) !important;
 }
 
 /* ================================== */
