@@ -31,16 +31,12 @@ layout: default
   {{ content }}
 </div>
 
-<span class="post-date">{{ page.date | date_to_string }}
+{% if page.author == "Qauland" %}
+    <img id="sitelogo" src="/images/qauland-plain.png" style="float:left;" alt="Logo Qauland"></img>
+{% endif %}
 
-    {% if page.last_modified_at %}
-      &#9656; {{ page.last_modified_at | date_to_string }}
-    {% endif %}
-
-    {% if page.author %}
-      &middot; {{ page.author }}
-    {% endif %}
-
+<span class="post-date" style="margin-top:-.2rem;font-size:75%;font-weight:500;line-height:1.15;">
+    {{ page.date | date: "%d%m" }}</br>{{ page.date | date: "%Y" | roman }}</br>
 </span>
 
 <!--

@@ -24,6 +24,7 @@ head_scripts:
 
 plugins:
   - jekyll-paginate
+  - jekyll/roman
 
 twitter:
   username:         kyunode

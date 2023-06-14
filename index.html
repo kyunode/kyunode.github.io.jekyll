@@ -7,22 +7,6 @@ title: Beranda
   {% for post in paginator.posts %}
   <div class="post">
 
-    <span class="post-date">{{ post.date | date_to_string }}
-    
-    {% if post.last_modified_at %}
-      &#9656; {{ post.last_modified_at | date_to_string }}
-    {% endif %}
-
-    {% if post.author %}
-      &middot; {{ post.author }}
-    {% endif %}
-
-    <br>
-
-    &#177;{{ post.content | number_of_words | divided_by: 195.0 | round }} menit waktu baca
-
-    </span>
-
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title | markdownify | remove:'<p>' | remove:'</p>' }}
@@ -35,9 +19,25 @@ title: Beranda
         {{ post.content | strip_html | truncatewords: 25 }}
     {% endif %}
 
+    <span class="post-date">Ditulis pada {{ post.date | date: "%-d/%-m/%Y" }}
+    
+    {% if post.author != "Qauland" %}
+      oleh {{ post.author }}
+    {% endif %}
+
+    {% if post.last_modified_at %}
+      <br>Terakhir diperbarui pada {{ post.last_modified_at | date: "%-d/%-m/%Y" }}
+    {% endif %}
+
+    <br>
+
+    Waktu baca &#177;{{ post.content | number_of_words | divided_by: 195.0 | round }} menit
+
+    </span>
+
   </div>
   {% endfor %}
-</div>{{ post.content | strip_html | truncatewords: 25 }}
+</div>
 
 <!--
 <div class="pagination">
