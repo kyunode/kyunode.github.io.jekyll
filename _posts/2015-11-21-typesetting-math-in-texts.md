@@ -1,5 +1,6 @@
 ---
 title: "Typesetting Math"
+author: Texts.io
 description: "Sebuah tutorial (dalam bahasa Inggris) untuk menulis rumus matematika di web."
 ---
 
